@@ -1,13 +1,13 @@
-# NAZIV PROIZVODA Arduino library
+# SI114X sensor Arduino library
 
-[![Compile Sketches](http://github-actions.40ants.com/e-radionicacom/Soldered-Generic-Arduino-Library/matrix.svg?branch=dev&only=Compile%20Sketches)](https://github.com/e-radionicacom/Soldered-Generic-Arduino-Library/actions/workflows/compile_test.yml)
-[![Make docs and publish to GitHub Pages](https://github.com/e-radionicacom/Soldered-Generic-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/e-radionicacom/Soldered-Generic-Arduino-Library/actions/workflows/make_docs.yml)
+[![Compile Sketches](http://github-actions.40ants.com/e-radionicacom/Soldered-SI114X-sensor-easyC-Arduino-Library/matrix.svg?branch=dev&only=Compile%20Sketches)](https://github.com/e-radionicacom/Soldered-SI114X-sensor-easyC-Arduino-Library/actions/workflows/compile_test.yml)
+[![Make docs and publish to GitHub Pages](https://github.com/e-radionicacom/Soldered-SI114X-sensor-easyC-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/e-radionicacom/Soldered-SI114X-sensor-easyC-Arduino-Library/actions/workflows/make_docs.yml)
 
 | ![Product name](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [NAZIV PROIZVODA](https://www.solde.red/SKU)                                                            |
+| [SI114X sensor](https://www.solde.red/333063)                                                            |
 
-OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/easyC). 
+SI114X sensor with [easyC ecosystem](https://www.soldered.com/easyC). 
 
 ### Repository Contents
 - **/src** - source files for the library (.h & .cpp)
@@ -15,13 +15,13 @@ OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/easyC).
 - ***other*** - *keywords* file highlights function words in your IDE, *library.properties* enables implementation with Arduino Library Manager.
 
 ### Hardware design
-You can find hardware design for this board in NAZIV PROIZVODA hardware repository
+You can find hardware design for this board in SI114X sensor hardware repository
 
 ### Documentation
 
-Access Arduino library documentation [here](https://e-radionicacom.github.io/Soldered-Generic-Arduino-Library/).
+Access Arduino library documentation [here](https://e-radionicacom.github.io/Soldered-SI114X-sensor-easyC-Arduino-Library/).
 
-- Tutorial for using the NAZIV PROIZVODA board
+- Tutorial for using the SI114X sensor board
 - Installing an Arduino library
 
 ### About Soldered
@@ -33,11 +33,6 @@ At Soldered, we design and manufacture a wide selection of electronic products t
 - [Educational content](https://learn.soldered.com)
 - [Community & technical support](https://community.soldered.com)
 - [Custom PCBs](https://pcb.soldered.com)
-
-
-### Original source
-​
-This library is possible thanks to original [arduino-mcp23017](https://github.com/blemasle/arduino-mcp23017) library. Thank you, blemasle. 
 
 
 ### Open-source license
