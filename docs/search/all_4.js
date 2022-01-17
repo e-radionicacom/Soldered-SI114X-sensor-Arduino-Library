@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['generic_2deasyc_2dsoldered_2ecpp_0',['Generic-easyC-SOLDERED.cpp',['../_generic-easy_c-_s_o_l_d_e_r_e_d_8cpp.html',1,'']]],
-  ['generic_2deasyc_2dsoldered_2eh_1',['Generic-easyC-SOLDERED.h',['../_generic-easy_c-_s_o_l_d_e_r_e_d_8h.html',1,'']]]
+  ['defaultaddress_0',['defaultAddress',['../class_s_i114_x__light__sensor__easyc_1_1_easy_c.html#af2e9f4354b67a1ba49d57e98caba3ab5',1,'SI114X_light_sensor_easyc::EasyC']]]
 ];

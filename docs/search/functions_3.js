@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['readdata_0',['readData',['../class_e_a_s_y_c___s_o_l_d_e_r_e_d___l_i_b_s_1_1_easy_c.html#a64631d9b1f7d05f32f85b547097e83b5',1,'EASYC_SOLDERED_LIBS::EasyC']]],
-  ['readregister_1',['readRegister',['../class_e_a_s_y_c___s_o_l_d_e_r_e_d___l_i_b_s_1_1_easy_c.html#a759023180eea23f55cbb24cbd89ec3b8',1,'EASYC_SOLDERED_LIBS::EasyC']]]
+  ['calcgain_0',['calcGain',['../class_s_i114_x.html#aa76ab26bd6071e3cf8a8e1f38d83350e',1,'SI114X']]]
 ];

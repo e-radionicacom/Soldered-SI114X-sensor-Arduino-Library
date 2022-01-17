@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['address_0',['address',['../class_e_a_s_y_c___s_o_l_d_e_r_e_d___l_i_b_s_1_1_easy_c.html#a1dd9b5dd497f94fc119e877216ee51ca',1,'EASYC_SOLDERED_LIBS::EasyC']]]
+  ['a_0',['a',['../class_s_i114_x.html#ac39a5420df72e212ed0ae483020f8c65',1,'SI114X']]],
+  ['address_1',['address',['../class_s_i114_x__light__sensor__easyc_1_1_easy_c.html#aff25332f85e8f9935ef94c0f7f633bb4',1,'SI114X_light_sensor_easyc::EasyC']]]
 ];

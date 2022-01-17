@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sendaddress_0',['sendAddress',['../class_e_a_s_y_c___s_o_l_d_e_r_e_d___l_i_b_s_1_1_easy_c.html#a7f716bbd85e3792cae6499061a7835f7',1,'EASYC_SOLDERED_LIBS::EasyC']]],
-  ['senddata_1',['sendData',['../class_e_a_s_y_c___s_o_l_d_e_r_e_d___l_i_b_s_1_1_easy_c.html#a8296d38ba78ba4d45804a5db26663d71',1,'EASYC_SOLDERED_LIBS::EasyC']]],
-  ['sensor_2',['Sensor',['../class_sensor.html',1,'Sensor'],['../class_sensor.html#a2b8ea6b15267f6fa0e263f57a09f6b62',1,'Sensor::Sensor()']]]
+  ['paramread_0',['paramRead',['../class_s_i114_x.html#a9c7cfb02cbf795c99000e3978c6f6ab4',1,'SI114X']]],
+  ['paramset_1',['paramSet',['../class_s_i114_x.html#a866e01fb9ca411c8919a18bddea734f7',1,'SI114X']]],
+  ['pin_2',['pin',['../class_sensor.html#a0efecf34431610766469857f25e113da',1,'Sensor::pin()'],['../class_s_i114_x.html#afdc96da3296b8c409a456aa04009d23a',1,'SI114X::pin()']]]
 ];

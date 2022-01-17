@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['easyc_5fsoldered_5flibs_0',['EASYC_SOLDERED_LIBS',['../namespace_e_a_s_y_c___s_o_l_d_e_r_e_d___l_i_b_s.html',1,'']]]
+  ['si114x_5flight_5fsensor_5feasyc_0',['SI114X_light_sensor_easyc',['../namespace_s_i114_x__light__sensor__easyc.html',1,'']]]
 ];
