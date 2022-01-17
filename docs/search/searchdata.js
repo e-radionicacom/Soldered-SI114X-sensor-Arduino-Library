@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "_abcdeginprsv",
   1: "es",
   2: "s",
-  3: "egrs",
+  3: "ers",
   4: "_abcegiprs",
   5: "abdenprv",
   6: "s"
