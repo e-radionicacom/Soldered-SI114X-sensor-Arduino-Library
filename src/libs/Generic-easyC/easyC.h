@@ -6,11 +6,11 @@
  *
  *
  * @copyright GNU General Public License v3.0
- * @authors     @ soldered.com
+ * @authors     Goran Juric @ soldered.com
  ***************************************************/
 
-#ifndef __EASYC_LIBRARY__
-#define __EASYC_LIBRARY__
+#ifndef __EASYC_LIBRARY_SI114X__
+#define __EASYC_LIBRARY_SI114X__
 
 #include "Arduino.h"
 #include "Wire.h"
@@ -18,7 +18,7 @@
 #define ANALOG_READ_REG  0
 #define DIGITAL_READ_REG 1
 
-namespace EASYC_SOLDERED_LIBS
+namespace SI114X_light_sensor_easyc
 {
 
 class EasyC
@@ -46,6 +46,6 @@ class EasyC
     int readRegister(char regAddr, char a[], size_t n);
 };
 
-} // namespace EASYC_SOLDERED_LIBS
+} // namespace SI114X_light_sensor_easyc
 
 #endif
