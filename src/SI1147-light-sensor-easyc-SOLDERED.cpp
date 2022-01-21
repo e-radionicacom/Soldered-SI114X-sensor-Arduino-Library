@@ -62,6 +62,12 @@ float SI114X::getLightIntensity()
 }
 
 
+/**
+ * @brief                   Function which gets IR light intensity data through I2C communication
+ *                          and converts it to int
+ *
+ * @return                  IR light intensity
+ */
 float SI114X::getLightIntensityIR()
 {
     readRegister(REG_ALS_IR_DATA0, raw,
@@ -75,6 +81,12 @@ float SI114X::getLightIntensityIR()
     return luxir;
 }
 
+/**
+ * @brief                   Function which gets UV light intensity data through I2C communication
+ *                          and converts it to int
+ *
+ * @return                  UV light intensity
+ */
 uint16_t SI114X::readUV(void)
 {
     if (getReg(REG_PART_ID) | 0X04)
@@ -176,6 +188,11 @@ void SI114X::init()
     sendData((const uint8_t *)a, 2 * sizeof(char));
 }
 
+/**
+ * @brief                   Function which loops until sensor goes to sleep
+ *
+ * @return                  retuns data to let know user if successful
+ */
 int16_t SI114X::_waitUntilSleep()
 {
     uint8_t retval = -1;
@@ -195,6 +212,15 @@ int16_t SI114X::_waitUntilSleep()
     return 0;
 }
 
+/**
+ * @brief                   Function which sets dynamic parameters in RAM
+ *
+ * @param   uint8_t add     Address of parameter in RAM
+ *
+ * @param   uint8_t val     Value to write in address
+ *
+ * @return                  Success if 1
+ */
 uint8_t SI114X::paramSet(uint8_t add, uint8_t val)
 {
     uint8_t retval;
@@ -226,6 +252,14 @@ uint8_t SI114X::paramSet(uint8_t add, uint8_t val)
         return 0;
 }
 
+
+/**
+ * @brief                   Function which reads dynamic parameters in RAM
+ *
+ * @param   uint8_t add     Address of parameter in RAM
+ *
+ * @return                  Value of register on address
+ */
 uint8_t SI114X::paramRead(uint8_t addr)
 {
     a[0] = REG_COMMAND;
@@ -235,19 +269,34 @@ uint8_t SI114X::paramRead(uint8_t addr)
     return *a;
 }
 
-// returns the visible gain
+/**
+ * @brief                   Function which reads from RAM
+ *
+ *
+ * @return                  gain of visible light
+ */
 uint8_t SI114X::readVisibleGain()
 {
 
     return paramRead(PARAM_ALSVISADCGAIN);
 }
 
-// returns the IR gain
+/**
+ * @brief                   Function which reads from RAM
+ *
+ *
+ * @return                  gain of IR light
+ */
 uint8_t SI114X::readIRGain()
 {
     return paramRead(PARAM_ALSIRADCGAIN);
 }
 
+/**
+ * @brief                   Function which initializes UV measuring
+ *
+ *
+ */
 void SI114X::enableUV()
 {
     a[0] = REG_UCOEFF0;
@@ -271,4 +320,26 @@ void SI114X::enableUV()
     a[0] = REG_IRQEN;
     a[1] = REG_IRQEN_ALSEVERYSAMPLE;
     sendData((const uint8_t *)a, sizeof(char) * 2);
+}
+
+/**
+ * @brief                   Function which sets Sensitivity of sensor
+ *
+ *
+ */
+void SI114X::setVISSensitivity(bool a)
+{
+    paramSet(PARAM_ALSVISADCMISC, a<<5);
+    vis_range = a;
+}
+
+/**
+ * @brief                   Function which sets Sensitivity of sensor
+ *
+ *
+ */
+void SI114X::setIRSensitivity(bool a)
+{
+    paramSet(PARAM_ALSIRADCMISC_RANGE, a<<5);
+    ir_range = a;
 }
