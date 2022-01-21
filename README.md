@@ -5,7 +5,8 @@
 
 | ![Product name](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [SI114X sensor](https://www.solde.red/333063)                                                            |
+| [SI1142 sensor](https://www.solde.red/333044)                                                            |
+| [SI1147 sensor](https://www.solde.red/333041)                                                            |
 
 SI114X sensor with [easyC ecosystem](https://www.soldered.com/easyC). 
 
