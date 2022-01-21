@@ -327,7 +327,7 @@ void SI114X::enableUV()
  */
 void SI114X::setVISSensitivity(bool a)
 {
-    paramSet(PARAM_ALSVISADCMISC, a<<5);
+    paramSet(PARAM_ALSVISADCMISC, a << 5);
     vis_range = a;
 }
 
@@ -338,6 +338,6 @@ void SI114X::setVISSensitivity(bool a)
  */
 void SI114X::setIRSensitivity(bool a)
 {
-    paramSet(PARAM_ALSIRADCMISC_RANGE, a<<5);
+    paramSet(PARAM_ALSIRADCMISC_RANGE, a << 5);
     ir_range = a;
 }
