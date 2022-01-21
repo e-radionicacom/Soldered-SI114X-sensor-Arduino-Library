@@ -161,6 +161,9 @@
 #define REG_IRQEN_PS2EVERYSAMPLE 0x08
 #define REG_IRQEN_PS3EVERYSAMPLE 0x10
 
+#define NORMAL_S  0x00
+#define HIGH_S    0x01
+
 class SI114X : public SI114X_light_sensor_easyc::EasyC
 {
   public:
@@ -179,12 +182,14 @@ class SI114X : public SI114X_light_sensor_easyc::EasyC
     uint8_t readIRGain();
     uint16_t readUV(void);
     void enableUV();
+    void setVISSensitivity(bool);
+    void setIRSensitivity(bool);
 
   protected:
     void initializeNative();
 
   private:
-    int pin;
+    int pin, vis_range = 0, ir_range = 0;
     char a[4], raw[2];
     uint16_t value;
 };

@@ -19,11 +19,15 @@ getLightIntensityIR	KEYWORD2
 Available		KEYWORD2
 init			KEYWORD2
 getReg			KEYWORD2
+setIRSensitivity	KEYWORD2
+setVISSensitivity	KEYWORD2
 
 ##################################################
 # Constants (LITERAL1)
 ##################################################
 
+NORMAL_S		LITERAL1
+HIGH_S			LITERAL1
 REG_PART_ID               LITERAL1
 REG_REV_ID                LITERAL1
 REG_SEQ_ID                LITERAL1

@@ -189,7 +189,7 @@ void SI114X::init()
 
 /**
  * @brief                   Function which waits until sensor goes to sleep
- *                          
+ *
  *
  * @return                  zero if not in sleep mode, other values are if sensor is in sleep mode
  */
@@ -214,7 +214,7 @@ int16_t SI114X::_waitUntilSleep()
 
 /**
  * @brief                   Function which sets parameters to RAM
- *                          
+ *
  * @param                   uint8_t add address of parameter
  *
  * @param                   uint8_t val value of parameter
@@ -254,7 +254,7 @@ uint8_t SI114X::paramSet(uint8_t add, uint8_t val)
 
 /**
  * @brief                   Function which reads parameters from RAM
- *                          
+ *
  * @param                   uint8_t addr Address of parameter
  *
  * @return                  Parameter value
@@ -270,7 +270,7 @@ uint8_t SI114X::paramRead(uint8_t addr)
 
 /**
  * @brief                   Function which reads gain of ALS sensor
- *                          
+ *
  *
  * @return                  Gain
  */
@@ -282,7 +282,7 @@ uint8_t SI114X::readVisibleGain()
 
 /**
  * @brief                   Function which reads gain of ALSIR sensor
- *                          
+ *
  *
  * @return                  Gain
  */
@@ -293,7 +293,7 @@ uint8_t SI114X::readIRGain()
 
 /**
  * @brief                   Function which enables reading of UV light
- *                          
+ *
  */
 void SI114X::enableUV()
 {
@@ -318,4 +318,26 @@ void SI114X::enableUV()
     a[0] = REG_IRQEN;
     a[1] = REG_IRQEN_ALSEVERYSAMPLE;
     sendData((const uint8_t *)a, sizeof(char) * 2);
+}
+
+/**
+ * @brief                   Function which sets Sensitivity of sensor
+ *
+ *
+ */
+void SI114X::setVISSensitivity(bool a)
+{
+    paramSet(PARAM_ALSVISADCMISC, a<<5);
+    vis_range = a;
+}
+
+/**
+ * @brief                   Function which sets Sensitivity of sensor
+ *
+ *
+ */
+void SI114X::setIRSensitivity(bool a)
+{
+    paramSet(PARAM_ALSIRADCMISC_RANGE, a<<5);
+    ir_range = a;
 }
