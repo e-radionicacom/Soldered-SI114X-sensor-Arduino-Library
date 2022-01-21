@@ -161,8 +161,8 @@
 #define REG_IRQEN_PS2EVERYSAMPLE 0x08
 #define REG_IRQEN_PS3EVERYSAMPLE 0x10
 
-#define NORMAL_S  0x00
-#define HIGH_S    0x01
+#define NORMAL_S 0x00
+#define HIGH_S   0x01
 
 class SI114X : public SI114X_light_sensor_easyc::EasyC
 {
