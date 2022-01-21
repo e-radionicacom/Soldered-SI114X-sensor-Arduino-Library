@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['raw_0',['raw',['../class_s_i114_x.html#aad60e0338a4b3eb6be9a91c07aa915e0',1,'SI114X']]]
+  ['pin_0',['pin',['../class_s_i114_x.html#afdc96da3296b8c409a456aa04009d23a',1,'SI114X']]]
 ];

@@ -16,8 +16,12 @@ var class_s_i114_x =
     [ "readIRGain", "class_s_i114_x.html#a25de0a810b00a2bee6ad70cd2cddca8e", null ],
     [ "readUV", "class_s_i114_x.html#ab4d5cd44ba31574ef1b74298748316fc", null ],
     [ "readVisibleGain", "class_s_i114_x.html#adff270792f3857f193ee20fc7a5f25f3", null ],
+    [ "setIRSensitivity", "class_s_i114_x.html#a52566335cda4a9c5f2b6c81a241d0db7", null ],
+    [ "setVISSensitivity", "class_s_i114_x.html#afa6ff9c8494f49e6f1f39df4c857e80b", null ],
     [ "a", "class_s_i114_x.html#ac39a5420df72e212ed0ae483020f8c65", null ],
+    [ "ir_range", "class_s_i114_x.html#a2dbb3206b0f5b93b663fde370bb68ba8", null ],
     [ "pin", "class_s_i114_x.html#afdc96da3296b8c409a456aa04009d23a", null ],
     [ "raw", "class_s_i114_x.html#aad60e0338a4b3eb6be9a91c07aa915e0", null ],
-    [ "value", "class_s_i114_x.html#a27378a7336a452bef63bad5164f09bf4", null ]
+    [ "value", "class_s_i114_x.html#a27378a7336a452bef63bad5164f09bf4", null ],
+    [ "vis_range", "class_s_i114_x.html#a8f568301eac0295b286b2806f3995e1d", null ]
 ];
