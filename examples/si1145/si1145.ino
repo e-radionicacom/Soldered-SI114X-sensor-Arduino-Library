@@ -15,26 +15,27 @@ SI114X sensor;
 
 void setup()
 {
-  Serial.begin(115200);
+    Serial.begin(115200);
 }
 
 void loop()
 {
-  if(sensor.Available())// Checking if sensor is available
-  {
-    float light; 
-    light = sensor.getLightIntensity(); // get light intensity
-    Serial.print("Light intensity: ");
-    Serial.print(light);
-    Serial.println(" lux.");
-    light = sensor.getLightIntensityIR(); // get light intensity
-    Serial.print("IR light intensity: ");
-    Serial.print(light);
-    Serial.println(" lux.");
-    int uv = sensor.readUV(); //If your sensor does not support UV, return value will be 0
-    Serial.print("UV index: ");
-    Serial.println(uv);
-  }
-  else Serial.println("Communication error");
-  delay(1000);
+    if (sensor.Available()) // Checking if sensor is available
+    {
+        float light;
+        light = sensor.getLightIntensity(); // get light intensity
+        Serial.print("Light intensity: ");
+        Serial.print(light);
+        Serial.println(" lux.");
+        light = sensor.getLightIntensityIR(); // get light intensity
+        Serial.print("IR light intensity: ");
+        Serial.print(light);
+        Serial.println(" lux.");
+        int uv = sensor.readUV(); // If your sensor does not support UV, return value will be 0
+        Serial.print("UV index: ");
+        Serial.println(uv);
+    }
+    else
+        Serial.println("Communication error");
+    delay(1000);
 }
