@@ -1,7 +1,7 @@
 /**
  **************************************************
  *
- * @file        si1145.ino
+ * @file        si1147.ino
  * @brief       Example for reading light intensity
  *
  *
