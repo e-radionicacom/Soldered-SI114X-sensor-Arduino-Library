@@ -1,5 +1,5 @@
 var searchData=
 [
   ['a_0',['a',['../class_s_i114_x.html#ac39a5420df72e212ed0ae483020f8c65',1,'SI114X']]],
-  ['address_1',['address',['../class_s_i114_x__light__sensor__easyc_1_1_easy_c.html#aff25332f85e8f9935ef94c0f7f633bb4',1,'SI114X_light_sensor_easyc::EasyC']]]
+  ['address_1',['address',['../class_easy_c.html#a6f4c6f2e8723b0c0495e126d49f5fcda',1,'EasyC']]]
 ];

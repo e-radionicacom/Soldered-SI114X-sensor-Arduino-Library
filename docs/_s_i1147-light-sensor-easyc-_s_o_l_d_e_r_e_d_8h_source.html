@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_s_i1147-light-sensor-easyc-_s_o_l_d_e
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define _Light_Sensor_</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="easy_c_8h.html">libs/Generic-easyC/easyC.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="easy_c_8hpp.html">libs/Generic-easyC/easyC.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define SI1141_ADDRESS 0x5A</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define SI1145_ADDRESS 0x60</span></div>
@@ -245,7 +245,7 @@ $(document).ready(function(){initNavTree('_s_i1147-light-sensor-easyc-_s_o_l_d_e
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">#define NORMAL_S 0x00</span></div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#define HIGH_S   0x01</span></div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="class_s_i114_x.html">  167</a></span><span class="keyword">class </span><a class="code hl_class" href="class_s_i114_x.html">SI114X</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_s_i114_x__light__sensor__easyc_1_1_easy_c.html">SI114X_light_sensor_easyc::EasyC</a></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="class_s_i114_x.html">  167</a></span><span class="keyword">class </span><a class="code hl_class" href="class_s_i114_x.html">SI114X</a> : <span class="keyword">public</span> SI114X_light_sensor_easyc::EasyC</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>{</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <a class="code hl_function" href="class_s_i114_x.html#abd5d19498ecf277145a823c0da713a15">SI114X</a>(<span class="keywordtype">int</span> _pin);</div>
@@ -276,7 +276,6 @@ $(document).ready(function(){initNavTree('_s_i1147-light-sensor-easyc-_s_o_l_d_e
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>};</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_s_i114_x__light__sensor__easyc_1_1_easy_c_html"><div class="ttname"><a href="class_s_i114_x__light__sensor__easyc_1_1_easy_c.html">SI114X_light_sensor_easyc::EasyC</a></div><div class="ttdef"><b>Definition:</b> easyC.h:25</div></div>
 <div class="ttc" id="aclass_s_i114_x_html"><div class="ttname"><a href="class_s_i114_x.html">SI114X</a></div><div class="ttdef"><b>Definition:</b> SI1147-light-sensor-easyc-SOLDERED.h:168</div></div>
 <div class="ttc" id="aclass_s_i114_x_html_a0e5570eca448844a39b63531f10a4838"><div class="ttname"><a href="class_s_i114_x.html#a0e5570eca448844a39b63531f10a4838">SI114X::enableUV</a></div><div class="ttdeci">void enableUV()</div><div class="ttdoc">Function which enables reading of UV light.</div><div class="ttdef"><b>Definition:</b> SI1147-light-sensor-easyc-SOLDERED.cpp:298</div></div>
 <div class="ttc" id="aclass_s_i114_x_html_a25de0a810b00a2bee6ad70cd2cddca8e"><div class="ttname"><a href="class_s_i114_x.html#a25de0a810b00a2bee6ad70cd2cddca8e">SI114X::readIRGain</a></div><div class="ttdeci">uint8_t readIRGain()</div><div class="ttdoc">Function which reads gain of ALSIR sensor.</div><div class="ttdef"><b>Definition:</b> SI1147-light-sensor-easyc-SOLDERED.cpp:289</div></div>
@@ -301,7 +300,7 @@ $(document).ready(function(){initNavTree('_s_i1147-light-sensor-easyc-_s_o_l_d_e
 <div class="ttc" id="aclass_s_i114_x_html_afa6ff9c8494f49e6f1f39df4c857e80b"><div class="ttname"><a href="class_s_i114_x.html#afa6ff9c8494f49e6f1f39df4c857e80b">SI114X::setVISSensitivity</a></div><div class="ttdeci">void setVISSensitivity(bool)</div><div class="ttdoc">Function which sets Sensitivity of sensor.</div><div class="ttdef"><b>Definition:</b> SI1147-light-sensor-easyc-SOLDERED.cpp:328</div></div>
 <div class="ttc" id="aclass_s_i114_x_html_afd0e359997237aa59c18c3a6c71b002a"><div class="ttname"><a href="class_s_i114_x.html#afd0e359997237aa59c18c3a6c71b002a">SI114X::Available</a></div><div class="ttdeci">bool Available()</div><div class="ttdoc">Function which checks if I2C device is responding.</div><div class="ttdef"><b>Definition:</b> SI1147-light-sensor-easyc-SOLDERED.cpp:104</div></div>
 <div class="ttc" id="aclass_s_i114_x_html_afdc96da3296b8c409a456aa04009d23a"><div class="ttname"><a href="class_s_i114_x.html#afdc96da3296b8c409a456aa04009d23a">SI114X::pin</a></div><div class="ttdeci">int pin</div><div class="ttdef"><b>Definition:</b> SI1147-light-sensor-easyc-SOLDERED.h:192</div></div>
-<div class="ttc" id="aeasy_c_8h_html"><div class="ttname"><a href="easy_c_8h.html">easyC.h</a></div><div class="ttdoc">Basic funtions for easyC libraries.</div></div>
+<div class="ttc" id="aeasy_c_8hpp_html"><div class="ttname"><a href="easy_c_8hpp.html">easyC.hpp</a></div><div class="ttdoc">Basic funtions for easyC libraries.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
@@ -310,7 +309,7 @@ $(document).ready(function(){initNavTree('_s_i1147-light-sensor-easyc-_s_o_l_d_e
     <ul>
         <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_s_i1147-light-sensor-easyc-_s_o_l_d_e_r_e_d_8h.html">SI1147-light-sensor-easyc-SOLDERED.h</a></li>
         <li class="footer">
-            Generated on Fri Feb 4 2022 08:29:08 for SI114X sensor Arduino library by <a href="http://www.doxygen.org/index.html">
+            Generated on Thu Feb 17 2022 12:07:12 for SI114X sensor Arduino library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.3.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
