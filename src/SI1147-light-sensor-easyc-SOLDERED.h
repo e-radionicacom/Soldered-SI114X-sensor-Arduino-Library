@@ -13,7 +13,7 @@
 #define _Light_Sensor_
 
 #include "Arduino.h"
-#include "libs/Generic-easyC/easyC.h"
+#include "libs/Generic-easyC/easyC.hpp"
 
 #define SI1141_ADDRESS 0x5A
 #define SI1145_ADDRESS 0x60
