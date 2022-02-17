@@ -164,7 +164,7 @@
 #define NORMAL_S 0x00
 #define HIGH_S   0x01
 
-class SI114X : public SI114X_light_sensor_easyc::EasyC
+class SI114X : public EasyC
 {
   public:
     SI114X(int _pin);
