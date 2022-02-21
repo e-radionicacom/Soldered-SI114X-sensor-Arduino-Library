@@ -2,6 +2,7 @@ var class_s_i114_x =
 [
     [ "SI114X", "class_s_i114_x.html#a1da77f602503b0e53ff194e994ee24e1", null ],
     [ "SI114X", "class_s_i114_x.html#abd5d19498ecf277145a823c0da713a15", null ],
+    [ "SI114X", "class_s_i114_x.html#abd5d19498ecf277145a823c0da713a15", null ],
     [ "_waitUntilSleep", "class_s_i114_x.html#afa656c474c45d1754960591ce925c4c9", null ],
     [ "Available", "class_s_i114_x.html#afd0e359997237aa59c18c3a6c71b002a", null ],
     [ "calcGain", "class_s_i114_x.html#aa76ab26bd6071e3cf8a8e1f38d83350e", null ],

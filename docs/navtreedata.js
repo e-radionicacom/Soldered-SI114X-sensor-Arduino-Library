@@ -25,12 +25,20 @@
 var NAVTREE =
 [
   [ "SI114X sensor Arduino library", "index.html", [
-    [ "Classes", "annotated.html", [
+    [ "Adafruit Community Code of Conduct", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html", [
       [ "Repository Contents", "index.html#autotoc_md1", null ],
       [ "Hardware design", "index.html#autotoc_md2", null ],
       [ "Documentation", "index.html#autotoc_md3", null ],
       [ "About Soldered", "index.html#autotoc_md4", null ],
       [ "Open-source license", "index.html#autotoc_md5", null ],
+      [ "Our Pledge", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md7", null ],
+      [ "Our Standards", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md8", null ],
+      [ "Our Responsibilities", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md9", null ],
+      [ "Moderation", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md10", null ],
+      [ "Scope", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md11", null ],
+      [ "Attribution", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md12", null ]
+    ] ],
+    [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
@@ -48,7 +56,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_s_i1147-light-sensor-easyc-_s_o_l_d_e_r_e_d_8cpp.html"
+"_adafruit___s_i1145_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
