@@ -21,8 +21,7 @@
 class SI114X : public Adafruit_SI1145
 {
   public:
-  SI114X();
-
+    SI114X();
 };
 
 #endif
