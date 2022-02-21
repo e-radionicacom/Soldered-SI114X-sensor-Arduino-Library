@@ -15,24 +15,22 @@ SI114X sensor; // initialize sensor
 
 void setup()
 {
-    Serial.begin(115200);
+  Serial.begin(115200);
+  if (! sensor.begin(SI1142)) {
+    Serial.println("Didn't find Si1142");
+    while (1);
+  }
 }
 
 void loop()
 {
-    if (sensor.Available()) // Checking if sensor is available
-    {
-        float light;
-        light = sensor.getLightIntensity(); // get light intensity
-        Serial.print("Light intensity: ");
-        Serial.print(light);
-        Serial.println(" lux.");
-        light = sensor.getLightIntensityIR(); // get light intensity
-        Serial.print("IR light intensity: ");
-        Serial.print(light);
-        Serial.println(" lux.");
-    }
-    else
-        Serial.println("Communication error");
-    delay(1000);
+  float light;
+  light = sensor.readVisible(); // get light intensity
+  Serial.print("Light intensity: ");
+  Serial.print(light);
+  Serial.println(" lux.");
+  light = sensor.readIR(); // get light intensity
+  Serial.print("IR light intensity: ");
+  Serial.print(light);
+  Serial.println(" lux.");
 }
