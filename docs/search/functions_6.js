@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['init_0',['init',['../class_s_i114_x.html#af0a5a97904974eacaee17ea760f01339',1,'SI114X']]],
-  ['initializenative_1',['initializeNative',['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC::initializeNative()'],['../class_s_i114_x.html#a2c40f29cefaee08569a568b89d25d526',1,'SI114X::initializeNative()']]]
+  ['write8_0',['write8',['../class_adafruit___s_i1145.html#af4646fb64d134f452d91aba415dd6b46',1,'Adafruit_SI1145']]],
+  ['writeparam_1',['writeParam',['../class_adafruit___s_i1145.html#a9ebc22c8989babd8f17636a69e77e952',1,'Adafruit_SI1145']]]
 ];

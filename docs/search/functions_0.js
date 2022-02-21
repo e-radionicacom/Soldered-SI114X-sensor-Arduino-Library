@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5fwaituntilsleep_0',['_waitUntilSleep',['../class_s_i114_x.html#afa656c474c45d1754960591ce925c4c9',1,'SI114X']]]
+  ['adafruit_5fsi1145_0',['Adafruit_SI1145',['../class_adafruit___s_i1145.html#ae89a2548ed17479c42aa011df63160f2',1,'Adafruit_SI1145']]]
 ];

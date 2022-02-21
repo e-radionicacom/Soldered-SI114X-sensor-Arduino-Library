@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['calcgain_0',['calcGain',['../class_s_i114_x.html#aa76ab26bd6071e3cf8a8e1f38d83350e',1,'SI114X']]]
+  ['initializenative_0',['initializeNative',['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC']]]
 ];

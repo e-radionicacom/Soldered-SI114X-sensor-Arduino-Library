@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['paramread_0',['paramRead',['../class_s_i114_x.html#a9c7cfb02cbf795c99000e3978c6f6ab4',1,'SI114X']]],
-  ['paramset_1',['paramSet',['../class_s_i114_x.html#a866e01fb9ca411c8919a18bddea734f7',1,'SI114X']]],
-  ['pin_2',['pin',['../class_s_i114_x.html#afdc96da3296b8c409a456aa04009d23a',1,'SI114X']]]
+  ['write8_0',['write8',['../class_adafruit___s_i1145.html#af4646fb64d134f452d91aba415dd6b46',1,'Adafruit_SI1145']]],
+  ['writeparam_1',['writeParam',['../class_adafruit___s_i1145.html#a9ebc22c8989babd8f17636a69e77e952',1,'Adafruit_SI1145']]]
 ];
