@@ -57,11 +57,12 @@ var NAVTREEINDEX0 =
 "index.html#autotoc_md3":[2],
 "index.html#autotoc_md4":[3],
 "index.html#autotoc_md5":[4],
+"index.html#autotoc_md6":[5],
 "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html":[0],
 "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md10":[0,8],
 "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md11":[0,9],
 "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md12":[0,10],
-"md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md7":[0,5],
+"md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md13":[0,11],
 "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md8":[0,6],
 "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md9":[0,7],
 "pages.html":[]
