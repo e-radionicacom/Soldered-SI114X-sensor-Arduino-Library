@@ -9,12 +9,9 @@
  * @authors     Goran Juric for soldered.com
  ***************************************************/
 
-<<<<<<< Updated upstream
 //Connecting diagram
 //Plug in easyC cable
 
-=======
->>>>>>> Stashed changes
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
 
 SI114X sensor; // initialize sensor
