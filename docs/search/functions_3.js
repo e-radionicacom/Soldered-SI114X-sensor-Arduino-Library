@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initializenative_0',['initializeNative',['../class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998',1,'EasyC']]]
+  ['detected_0',['detected',['../class_adafruit___i2_c_device.html#ac7492b543fe4c0bb0d94a7bf1915cb2a',1,'Adafruit_I2CDevice']]]
 ];

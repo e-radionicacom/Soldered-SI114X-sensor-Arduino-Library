@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['write8_0',['write8',['../class_adafruit___s_i1145.html#af4646fb64d134f452d91aba415dd6b46',1,'Adafruit_SI1145']]],
-  ['writeparam_1',['writeParam',['../class_adafruit___s_i1145.html#a9ebc22c8989babd8f17636a69e77e952',1,'Adafruit_SI1145']]]
+  ['print_0',['print',['../class_adafruit___bus_i_o___register.html#abc1e92469336a95e6ddf34bd7fd18a67',1,'Adafruit_BusIO_Register']]],
+  ['println_1',['println',['../class_adafruit___bus_i_o___register.html#aebb1d9dd6520ba1a20b3952c434d7a47',1,'Adafruit_BusIO_Register']]]
 ];

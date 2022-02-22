@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['adafruit_5fsi1145_0',['Adafruit_SI1145',['../class_adafruit___s_i1145.html#ae89a2548ed17479c42aa011df63160f2',1,'Adafruit_SI1145']]]
+  ['_5fread_0',['_read',['../class_adafruit___i2_c_device.html#a057354cd908d37ce5b612540d7c7b794',1,'Adafruit_I2CDevice']]]
 ];

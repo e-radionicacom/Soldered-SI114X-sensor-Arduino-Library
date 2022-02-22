@@ -32,12 +32,12 @@ var NAVTREE =
       [ "About Soldered", "index.html#autotoc_md4", null ],
       [ "Original source", "index.html#autotoc_md5", null ],
       [ "Open-source license", "index.html#autotoc_md6", null ],
-      [ "Our Pledge", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md8", null ],
-      [ "Our Standards", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md9", null ],
-      [ "Our Responsibilities", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md10", null ],
-      [ "Moderation", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md11", null ],
-      [ "Scope", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md12", null ],
-      [ "Attribution", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md13", null ]
+      [ "Our Pledge", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md9", null ],
+      [ "Our Standards", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md10", null ],
+      [ "Our Responsibilities", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md11", null ],
+      [ "Moderation", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md12", null ],
+      [ "Scope", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md13", null ],
+      [ "Attribution", "md_src_libs__adafruit__s_i1145__library_code_of_conduct.html#autotoc_md14", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -50,14 +50,20 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_adafruit___s_i1145_8cpp.html"
+"_adafruit___bus_i_o___register_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
