@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ad8_5fhigh_5ftoread_5fad7_5fhigh_5ftoinc_0',['AD8_HIGH_TOREAD_AD7_HIGH_TOINC',['../_adafruit___bus_i_o___register_8h.html#aab8187a2a7855dbdafc14106289f7c52a33287651889968168c65b8bb3c1ff9d0',1,'Adafruit_BusIO_Register.h']]],
-  ['adafruit_20community_20code_20of_20conduct_1',['Adafruit Community Code of Conduct',['../md_src_libs__adafruit__s_i1145__library_code_of_conduct.html',1,'']]],
+  ['adafruit_20community_20code_20of_20conduct_1',['Adafruit Community Code of Conduct',['../md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html',1,'']]],
   ['adafruit_5fbusio_5fregister_2',['Adafruit_BusIO_Register',['../class_adafruit___bus_i_o___register.html#a300a0297429df441bc88dbb37eac1a06',1,'Adafruit_BusIO_Register::Adafruit_BusIO_Register()'],['../class_adafruit___bus_i_o___register.html',1,'Adafruit_BusIO_Register'],['../class_adafruit___bus_i_o___register.html#a89e57552743a5f15c99cb7aa27b3ca13',1,'Adafruit_BusIO_Register::Adafruit_BusIO_Register(Adafruit_SPIDevice *spidevice, uint16_t reg_addr, Adafruit_BusIO_SPIRegType type, uint8_t width=1, uint8_t byteorder=LSBFIRST, uint8_t address_width=1)'],['../class_adafruit___bus_i_o___register.html#a7de4a4cbb3e8cdfebac31344e8ab6c8c',1,'Adafruit_BusIO_Register::Adafruit_BusIO_Register(Adafruit_I2CDevice *i2cdevice, uint16_t reg_addr, uint8_t width=1, uint8_t byteorder=LSBFIRST, uint8_t address_width=1)']]],
   ['adafruit_5fbusio_5fregister_2ecpp_3',['Adafruit_BusIO_Register.cpp',['../_adafruit___bus_i_o___register_8cpp.html',1,'']]],
   ['adafruit_5fbusio_5fregister_2eh_4',['Adafruit_BusIO_Register.h',['../_adafruit___bus_i_o___register_8h.html',1,'']]],

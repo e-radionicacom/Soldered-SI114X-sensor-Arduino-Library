@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../src_2libs_2_adafruit___bus_i_o_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../src_2libs_2_adafruit___s_i1145___library_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]],
+  ['readme_2emd_0',['README.md',['../src_2libs_2_adafruit___s_i1145___library___bus_i_o_2_r_e_a_d_m_e_8md.html',1,'']]],
   ['sendaddress_1',['sendAddress',['../class_easy_c.html#a10aa7df19e8c7bf12cd720b662f317a3',1,'EasyC']]],
   ['senddata_2',['sendData',['../class_easy_c.html#afe8aa014ae53cad3b0f3c42f59277195',1,'EasyC']]],
   ['setaddress_3',['setAddress',['../class_adafruit___bus_i_o___register.html#a08ddf29ed836c712e2a2f050e1ae3bcd',1,'Adafruit_BusIO_Register']]],
