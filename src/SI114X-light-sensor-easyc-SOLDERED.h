@@ -13,7 +13,7 @@
 #define _Light_Sensor_
 
 #include "Arduino.h"
-#include "libs/Adafruit_SI1145_Library/Adafruit_SI1145.h"
+#include "libs/Adafruit_SI1145_Library_BusIO/Adafruit_SI1145.h"
 
 #define SI1142 0x5A
 #define SI1147 0x60
