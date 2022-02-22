@@ -8,8 +8,6 @@
                 Product used is www.solde.red/333041
    @authors     Goran Juric for soldered.com
  ***************************************************/
-//Connecting diagram
-//Plug in easyC cable
 
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
 
@@ -17,10 +15,11 @@ SI114X sensor;
 
 void setup()
 {
-  Serial.begin(115200);
-  if (! sensor.begin(SI1147)) {
+  Serial.begin(115200); //Begin serial communication with PC using 115200 baud rate
+  if (! sensor.begin(SI1147)) //Initialize sensor and specify which sensor is connected
+  {
     Serial.println("Didn't find Si1147");
-    while (1);
+    while (1);  //Loop forever if sensor is not found
   }
 }
 
@@ -37,7 +36,7 @@ void loop()
   Serial.println(" lux.");
   int uv = sensor.readUV(); // If your sensor does not support UV, return value will be 0
   Serial.print("UV index: ");
-  Serial.println(uv / 100.0);
-  
+  Serial.println(uv / 100.0); //UV needs to be divided by 100 because registers in sensor can
+                              //store only integers so using this method we can increase precision
   delay(1000);
 }

@@ -9,19 +9,23 @@
  * @authors     Goran Juric for soldered.com
  ***************************************************/
 
+<<<<<<< Updated upstream
 //Connecting diagram
 //Plug in easyC cable
 
+=======
+>>>>>>> Stashed changes
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
 
 SI114X sensor; // initialize sensor
 
 void setup()
 {
-  Serial.begin(115200);
-  if (! sensor.begin(SI1142)) {
+  Serial.begin(115200); //Begin serial communication with PC using 115200 baud rate
+  if (! sensor.begin(SI1142)) //Initialize sensor and specify which sensor is connected
+  { 
     Serial.println("Didn't find Si1142");
-    while (1);
+    while (1);  //Loop forever if sensor is not found
   }
 }
 
@@ -34,6 +38,6 @@ void loop()
   Serial.println(" lux.");
   light = sensor.readIR(); // get light intensity
   Serial.print("IR light intensity: ");
-  Serial.print(light);
+  Serial.print(light);  //Print light intensity in lux units
   Serial.println(" lux.");
 }
