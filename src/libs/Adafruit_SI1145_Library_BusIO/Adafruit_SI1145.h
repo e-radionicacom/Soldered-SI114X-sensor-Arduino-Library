@@ -22,7 +22,7 @@
 #else
 #include "WProgram.h"
 #endif
-#include <Adafruit_I2CDevice.h>
+#include "Adafruit_I2CDevice.h"
 
 /* COMMANDS */
 #define SI1145_PARAM_QUERY 0x80
