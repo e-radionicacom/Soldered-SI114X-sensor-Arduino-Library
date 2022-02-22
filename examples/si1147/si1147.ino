@@ -8,6 +8,8 @@
                 Product used is www.solde.red/333041
    @authors     Goran Juric for soldered.com
  ***************************************************/
+//Connecting diagram
+//Plug in easyC cable
 
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
 
