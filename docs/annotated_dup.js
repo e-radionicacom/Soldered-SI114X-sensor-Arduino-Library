@@ -5,6 +5,5 @@ var annotated_dup =
     [ "Adafruit_I2CDevice", "class_adafruit___i2_c_device.html", "class_adafruit___i2_c_device" ],
     [ "Adafruit_SI1145", "class_adafruit___s_i1145.html", "class_adafruit___s_i1145" ],
     [ "Adafruit_SPIDevice", "class_adafruit___s_p_i_device.html", "class_adafruit___s_p_i_device" ],
-    [ "EasyC", "class_easy_c.html", "class_easy_c" ],
     [ "SI114X", "class_s_i114_x.html", "class_s_i114_x" ]
 ];

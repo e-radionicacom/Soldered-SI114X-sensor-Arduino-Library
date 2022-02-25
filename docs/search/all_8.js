@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['native_0',['native',['../class_easy_c.html#abb766b60f26778dbc64e8792fd754729',1,'EasyC']]]
+  ['print_0',['print',['../class_adafruit___bus_i_o___register.html#abc1e92469336a95e6ddf34bd7fd18a67',1,'Adafruit_BusIO_Register']]],
+  ['println_1',['println',['../class_adafruit___bus_i_o___register.html#aebb1d9dd6520ba1a20b3952c434d7a47',1,'Adafruit_BusIO_Register']]]
 ];
