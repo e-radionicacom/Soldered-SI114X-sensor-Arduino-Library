@@ -14,5 +14,6 @@ var class_adafruit___s_i1145 =
     [ "reset", "class_adafruit___s_i1145.html#ab7a22b92c14315e36b84a42498e970ea", null ],
     [ "write8", "class_adafruit___s_i1145.html#af4646fb64d134f452d91aba415dd6b46", null ],
     [ "writeParam", "class_adafruit___s_i1145.html#a9ebc22c8989babd8f17636a69e77e952", null ],
-    [ "i2c_dev", "class_adafruit___s_i1145.html#a7c8a724faae1190100b81d065cbbfce8", null ]
+    [ "i2c_dev", "class_adafruit___s_i1145.html#a7c8a724faae1190100b81d065cbbfce8", null ],
+    [ "uv_flag", "class_adafruit___s_i1145.html#ab0bb09f69b06d383451cac937d3d912f", null ]
 ];

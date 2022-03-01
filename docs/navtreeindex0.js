@@ -100,6 +100,7 @@ var NAVTREEINDEX0 =
 "class_adafruit___s_i1145.html#a9b058485d8305725020219839285ea16":[1,0,3,8],
 "class_adafruit___s_i1145.html#a9d1715d966500b5f5f88568a5b4f780b":[1,0,3,9],
 "class_adafruit___s_i1145.html#a9ebc22c8989babd8f17636a69e77e952":[1,0,3,13],
+"class_adafruit___s_i1145.html#ab0bb09f69b06d383451cac937d3d912f":[1,0,3,15],
 "class_adafruit___s_i1145.html#ab7a22b92c14315e36b84a42498e970ea":[1,0,3,11],
 "class_adafruit___s_i1145.html#ae89a2548ed17479c42aa011df63160f2":[1,0,3,0],
 "class_adafruit___s_i1145.html#af36fbd1a7ec186e847ed2edba00d057a":[1,0,3,5],
