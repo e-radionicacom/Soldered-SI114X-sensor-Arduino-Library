@@ -167,5 +167,6 @@ private:
   uint8_t readParam(uint8_t p);
   uint8_t writeParam(uint8_t p, uint8_t v);
   Adafruit_I2CDevice *i2c_dev = NULL; ///< Pointer to I2C bus interface
+  bool uv_flag = 0;
 };
 #endif

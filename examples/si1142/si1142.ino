@@ -37,4 +37,5 @@ void loop()
   Serial.print("IR light intensity: ");
   Serial.print(light);  //Print light intensity in lux units
   Serial.println(" lux.");
+  delay(1000);
 }

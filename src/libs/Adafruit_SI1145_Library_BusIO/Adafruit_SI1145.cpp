@@ -58,17 +58,19 @@ boolean Adafruit_SI1145::begin(uint8_t addr, TwoWire *pBus) {
 
 
   reset();
-
-  /***********************************/
-  // enable UVindex measurement coefficients!
-  write8(SI1145_REG_UCOEFF0, 0x29);
-  write8(SI1145_REG_UCOEFF1, 0x89);
-  write8(SI1145_REG_UCOEFF2, 0x02);
-  write8(SI1145_REG_UCOEFF3, 0x00);
-
+  if(id == 0b01000111)
+  {
+    uv_flag=1;
+    /***********************************/
+    // enable UVindex measurement coefficients!
+    write8(SI1145_REG_UCOEFF0, 0x29);
+    write8(SI1145_REG_UCOEFF1, 0x89);
+    write8(SI1145_REG_UCOEFF2, 0x02);
+    write8(SI1145_REG_UCOEFF3, 0x00);
+  }
   // enable UV sensor
   writeParam(SI1145_PARAM_CHLIST,
-             SI1145_PARAM_CHLIST_ENUV | SI1145_PARAM_CHLIST_ENALSIR |
+             (SI1145_PARAM_CHLIST_ENUV  * uv_flag) | SI1145_PARAM_CHLIST_ENALSIR |
                  SI1145_PARAM_CHLIST_ENALSVIS | SI1145_PARAM_CHLIST_ENPS1);
   // enable interrupt on every sample
   write8(SI1145_REG_INTCFG, SI1145_REG_INTCFG_INTOE);
