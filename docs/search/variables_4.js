@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uv_5fflag_0',['uv_flag',['../class_adafruit___s_i1145.html#ab0bb09f69b06d383451cac937d3d912f',1,'Adafruit_SI1145']]]
+  ['sensor_0',['sensor',['../class_s_i114_x.html#ac267e764d6789768d1cd6d988f476d83',1,'SI114X']]]
 ];
