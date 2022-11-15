@@ -25,20 +25,16 @@
 var NAVTREE =
 [
   [ "SI114X sensor Arduino library", "index.html", [
+    [ "Digital light & proximity sensor SI1142 breakout Arduino library", "index.html", [
+      [ "Have fun!", "index.html#autotoc_md8", null ]
+    ] ],
     [ "Adafruit Community Code of Conduct", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html", [
-      [ "Repository Contents", "index.html#autotoc_md1", null ],
-      [ "Hardware design", "index.html#autotoc_md2", null ],
-      [ "Documentation", "index.html#autotoc_md3", null ],
-      [ "Board compatibility", "index.html#autotoc_md4", null ],
-      [ "About Soldered", "index.html#autotoc_md5", null ],
-      [ "Original source", "index.html#autotoc_md6", null ],
-      [ "Open-source license", "index.html#autotoc_md7", null ],
-      [ "Our Pledge", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md9", null ],
-      [ "Our Standards", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md10", null ],
-      [ "Our Responsibilities", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md11", null ],
-      [ "Moderation", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md12", null ],
-      [ "Scope", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md13", null ],
-      [ "Attribution", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md14", null ]
+      [ "Our Pledge", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md10", null ],
+      [ "Our Standards", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md11", null ],
+      [ "Our Responsibilities", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md12", null ],
+      [ "Moderation", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md13", null ],
+      [ "Scope", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md14", null ],
+      [ "Attribution", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md15", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

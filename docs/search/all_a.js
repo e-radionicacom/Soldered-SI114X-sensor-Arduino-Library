@@ -6,9 +6,8 @@ var searchData=
   ['setspeed_3',['setSpeed',['../class_adafruit___i2_c_device.html#a784c398626837ef911ce7e69b0807be7',1,'Adafruit_I2CDevice']]],
   ['setwidth_4',['setWidth',['../class_adafruit___bus_i_o___register.html#a478ae4ca787304ead47a56994fbdb840',1,'Adafruit_BusIO_Register']]],
   ['si114x_5',['SI114X',['../class_s_i114_x.html',1,'SI114X'],['../class_s_i114_x.html#abd5d19498ecf277145a823c0da713a15',1,'SI114X::SI114X()']]],
-  ['si114x_20sensor_20arduino_20library_6',['SI114X sensor Arduino library',['../index.html',1,'']]],
-  ['si114x_2dlight_2dsensor_2deasyc_2dsoldered_2ecpp_7',['SI114X-light-sensor-easyc-SOLDERED.cpp',['../_s_i114_x-light-sensor-easyc-_s_o_l_d_e_r_e_d_8cpp.html',1,'']]],
-  ['si114x_2dlight_2dsensor_2deasyc_2dsoldered_2eh_8',['SI114X-light-sensor-easyc-SOLDERED.h',['../_s_i114_x-light-sensor-easyc-_s_o_l_d_e_r_e_d_8h.html',1,'']]],
-  ['spi_5fbitorder_5flsbfirst_9',['SPI_BITORDER_LSBFIRST',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5a7a075a3dd6855542eb39b6549ec1f9a6',1,'Adafruit_SPIDevice.h']]],
-  ['spi_5fbitorder_5fmsbfirst_10',['SPI_BITORDER_MSBFIRST',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5a86a2a85476827647da7b3ea36b0bd461',1,'Adafruit_SPIDevice.h']]]
+  ['si114x_2dlight_2dsensor_2deasyc_2dsoldered_2ecpp_6',['SI114X-light-sensor-easyc-SOLDERED.cpp',['../_s_i114_x-light-sensor-easyc-_s_o_l_d_e_r_e_d_8cpp.html',1,'']]],
+  ['si114x_2dlight_2dsensor_2deasyc_2dsoldered_2eh_7',['SI114X-light-sensor-easyc-SOLDERED.h',['../_s_i114_x-light-sensor-easyc-_s_o_l_d_e_r_e_d_8h.html',1,'']]],
+  ['spi_5fbitorder_5flsbfirst_8',['SPI_BITORDER_LSBFIRST',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5a7a075a3dd6855542eb39b6549ec1f9a6',1,'Adafruit_SPIDevice.h']]],
+  ['spi_5fbitorder_5fmsbfirst_9',['SPI_BITORDER_MSBFIRST',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5a86a2a85476827647da7b3ea36b0bd461',1,'Adafruit_SPIDevice.h']]]
 ];
