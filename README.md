@@ -4,7 +4,11 @@
 
 | ![Digital light & proximity sensor SI1142 breakout](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [Digital light & proximity sensor SI1142 breakout](https://www.solde.red/333074)                                                            |
+| [Digital light & proximity sensor SI1142 breakout](https://www.solde.red/333074)      
+
+| ![UV sensor SI1147 breakout](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
+| :---------------------------------------------------------------------------------------------: |
+| [UV sensor SI1147 breakout](https://www.solde.red/333076)                                                        |
 
 OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/en/easyC). 
 
@@ -15,6 +19,8 @@ OPIS PROIZVODA + LINK NA [easyC ecosystem](https://www.soldered.com/en/easyC).
 
 ### Hardware design
 You can find hardware design for this board in [*Digital light & proximity sensor SI1142 breakout*](https://github.com/SolderedElectronics/NAZIVPROIZVODA-hardware-design) hardware repository.
+
+You can find hardware design for this board in [*UV sensor SI1147 breakout*](https://github.com/SolderedElectronics/NAZIVPROIZVODA-hardware-design) hardware repository.
 
 ### Documentation
 
