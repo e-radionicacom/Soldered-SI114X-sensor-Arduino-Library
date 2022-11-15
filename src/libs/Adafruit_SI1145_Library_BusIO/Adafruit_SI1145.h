@@ -142,7 +142,7 @@
 #define SI1145_REG_PARAMRD 0x2E
 #define SI1145_REG_CHIPSTAT 0x30
 
-#define SI1145_ADDR 0x60
+#define SI1145_ADDR 0X6A
 /**
  * @brief Library for using the Si1145 UV/IR/Visible Light Sensor
  *
