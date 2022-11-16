@@ -10,8 +10,9 @@ var searchData=
   ['si1142_7',['SI1142',['../_s_i114_x-light-sensor-easyc-_s_o_l_d_e_r_e_d_8h.html#a523e58189ae60e4d1ef58eac9cacf336a7200d01b45f740b80c54ac82f601d300',1,'SI114X-light-sensor-easyc-SOLDERED.h']]],
   ['si1147_8',['SI1147',['../_s_i114_x-light-sensor-easyc-_s_o_l_d_e_r_e_d_8h.html#a523e58189ae60e4d1ef58eac9cacf336ae10a430502bee40a5fbf6486bf573edf',1,'SI114X-light-sensor-easyc-SOLDERED.h']]],
   ['si114x_9',['SI114X',['../class_s_i114_x.html',1,'SI114X'],['../class_s_i114_x.html#ae1bbf371a8e73eb40c3765947159b7e6',1,'SI114X::SI114X()']]],
-  ['si114x_2dlight_2dsensor_2deasyc_2dsoldered_2ecpp_10',['SI114X-light-sensor-easyc-SOLDERED.cpp',['../_s_i114_x-light-sensor-easyc-_s_o_l_d_e_r_e_d_8cpp.html',1,'']]],
-  ['si114x_2dlight_2dsensor_2deasyc_2dsoldered_2eh_11',['SI114X-light-sensor-easyc-SOLDERED.h',['../_s_i114_x-light-sensor-easyc-_s_o_l_d_e_r_e_d_8h.html',1,'']]],
-  ['spi_5fbitorder_5flsbfirst_12',['SPI_BITORDER_LSBFIRST',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5a7a075a3dd6855542eb39b6549ec1f9a6',1,'Adafruit_SPIDevice.h']]],
-  ['spi_5fbitorder_5fmsbfirst_13',['SPI_BITORDER_MSBFIRST',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5a86a2a85476827647da7b3ea36b0bd461',1,'Adafruit_SPIDevice.h']]]
+  ['si114x_20sensor_20breakout_20arduino_20library_10',['SI114x sensor breakout Arduino library',['../index.html',1,'']]],
+  ['si114x_2dlight_2dsensor_2deasyc_2dsoldered_2ecpp_11',['SI114X-light-sensor-easyc-SOLDERED.cpp',['../_s_i114_x-light-sensor-easyc-_s_o_l_d_e_r_e_d_8cpp.html',1,'']]],
+  ['si114x_2dlight_2dsensor_2deasyc_2dsoldered_2eh_12',['SI114X-light-sensor-easyc-SOLDERED.h',['../_s_i114_x-light-sensor-easyc-_s_o_l_d_e_r_e_d_8h.html',1,'']]],
+  ['spi_5fbitorder_5flsbfirst_13',['SPI_BITORDER_LSBFIRST',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5a7a075a3dd6855542eb39b6549ec1f9a6',1,'Adafruit_SPIDevice.h']]],
+  ['spi_5fbitorder_5fmsbfirst_14',['SPI_BITORDER_MSBFIRST',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5a86a2a85476827647da7b3ea36b0bd461',1,'Adafruit_SPIDevice.h']]]
 ];

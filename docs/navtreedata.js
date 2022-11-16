@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "SI114X sensor Arduino library", "index.html", [
-    [ "Digital light & proximity sensor SI1142 breakout Arduino library", "index.html", [
+    [ "SI114x sensor breakout Arduino library", "index.html", [
       [ "Have fun!", "index.html#autotoc_md8", null ]
     ] ],
     [ "Adafruit Community Code of Conduct", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html", [
