@@ -26,15 +26,8 @@ bool SI114X::begin()
     switch (this->sensor)
     {
     case SI1142:
-        return Adafruit_SI1145::begin(0x5A);
+        return Adafruit_SI1145::begin(SI1142_ADDR);
     case SI1147:
-        return Adafruit_SI1145::begin(0X60);
+        return Adafruit_SI1145::begin(SI1147_ADDR);
     }
 }
-
-/**
- *
- * SI1142
- *
- *
- */

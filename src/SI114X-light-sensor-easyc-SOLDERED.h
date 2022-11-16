@@ -13,6 +13,9 @@
 #ifndef _Light_Sensor_
 #define _Light_Sensor_
 
+#define SI1142_ADDR 0x5A
+#define SI1147_ADDR 0x60
+
 #include "Arduino.h"
 #include "libs/Adafruit_SI1145_Library_BusIO/Adafruit_SI1145.h"
 
