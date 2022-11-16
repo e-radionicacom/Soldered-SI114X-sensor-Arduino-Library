@@ -23,18 +23,18 @@ SI114X::SI114X(sensor_variant_t sensor) : Adafruit_SI1145()
 
 bool SI114X::begin()
 {
-    switch(this->sensor)
+    switch (this->sensor)
     {
-        case SI1142:
-            return Adafruit_SI1145::begin(0x5A);
-        case SI1147:
-            return Adafruit_SI1145::begin(0X60);
-    }            
+    case SI1142:
+        return Adafruit_SI1145::begin(0x5A);
+    case SI1147:
+        return Adafruit_SI1145::begin(0X60);
+    }
 }
 
 /**
- * 
+ *
  * SI1142
- * 
- * 
-*/
+ *
+ *
+ */
