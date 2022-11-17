@@ -16,18 +16,6 @@
  * @brief                   Default constructor
  *
  */
-SI114X::SI114X(sensor_variant_t sensor) : Adafruit_SI1145()
+SI114X::SI114X() : Adafruit_SI1145()
 {
-    this->sensor = sensor;
-}
-
-bool SI114X::begin()
-{
-    switch (this->sensor)
-    {
-    case SI1142:
-        return Adafruit_SI1145::begin(SI1142_ADDR);
-    case SI1147:
-        return Adafruit_SI1145::begin(SI1147_ADDR);
-    }
 }
