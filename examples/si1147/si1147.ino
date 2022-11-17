@@ -19,39 +19,24 @@ void setup()
   if (! sensor.begin(SI1147)) //Initialize sensor and specify which sensor is connected
   {
     Serial.println("Didn't find Si1147");
-    while (true)
-    {
-      delay(1000);
-      Serial.println("Didn't find Si1147");
-    }  //Loop forever if sensor is not found
+    while (1);  //Loop forever if sensor is not found
   }
 }
 
 void loop()
 {
   float light;
+  light = sensor.readVisible(); // get light intensity
   Serial.print("Light intensity: ");
-  Serial.print(sensor.readVisible());
+  Serial.print(light);
   Serial.println(" lux.");
-
-  delay(500);
-
+  light = sensor.readIR(); // get light intensity
   Serial.print("IR light intensity: ");
-  Serial.print(sensor.readIR());
+  Serial.print(light);
   Serial.println(" lux.");
-
-  delay(500);
-
-  float uv = sensor.readUV(); // If your sensor does not support UV, return value will be 0
+  int uv = sensor.readUV(); // If your sensor does not support UV, return value will be 0
   Serial.print("UV index: ");
   Serial.println(uv / 100.0); //UV needs to be divided by 100 because registers in sensor can
                               //store only integers so using this method we can increase precision
-  delay(500);
-
-  Serial.print("Prox: ");
-  Serial.print(sensor.readProx());
-  Serial.println(" mmmm.");
-
-  delay(500);
-
+  delay(1000);
 }
