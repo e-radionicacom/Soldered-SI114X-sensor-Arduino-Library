@@ -47,6 +47,8 @@ boolean Adafruit_SI1145::begin(TwoWire *pBus) {
  * @return boolean true: success false: failure to initize the sensor
  */
 boolean Adafruit_SI1145::begin(uint8_t addr, TwoWire *pBus) {
+  delay(25); // Added setup time according to Table 1 in the Si114x datasheet
+
   if (i2c_dev)
     delete i2c_dev;
   i2c_dev = new Adafruit_I2CDevice(addr, pBus);
@@ -69,12 +71,15 @@ boolean Adafruit_SI1145::begin(uint8_t addr, TwoWire *pBus) {
     write8(SI1145_REG_UCOEFF3, 0x00);
   }
   // enable UV sensor
-  writeParam(SI1145_PARAM_CHLIST,
-             (SI1145_PARAM_CHLIST_ENUV  * uv_flag) | SI1145_PARAM_CHLIST_ENALSIR |
-                 SI1145_PARAM_CHLIST_ENALSVIS | SI1145_PARAM_CHLIST_ENPS1);
+  writeParam(SI1145_PARAM_CHLIST, (SI1145_PARAM_CHLIST_ENUV  * uv_flag) | SI1145_PARAM_CHLIST_ENALSIR | SI1145_PARAM_CHLIST_ENALSVIS | SI1145_PARAM_CHLIST_ENPS1);
   // enable interrupt on every sample
   write8(SI1145_REG_INTCFG, SI1145_REG_INTCFG_INTOE);
   write8(SI1145_REG_IRQEN, SI1145_REG_IRQEN_ALSEVERYSAMPLE);
+
+  // Modification so the library works on SI1142
+  write8(SI1145_REG_PSRATE, 0x08);    // Set PS to measure every time the device wakes up
+  write8(SI1145_REG_ALSRATE, 0x08);   // Set ALS to measure every time the device wakes up
+                                      // See ALS_RATE and PS_RATE in the SI1142 datasheet
 
   /****************************** Prox Sense 1 */
 
@@ -114,6 +119,8 @@ boolean Adafruit_SI1145::begin(uint8_t addr, TwoWire *pBus) {
   // auto run
   write8(SI1145_REG_COMMAND, SI1145_PSALS_AUTO);
 
+  // Delay for initialization so the 1st reading is accurate right away on SI1142
+  delay(2200);   
   return true;
 }
 /**
