@@ -1,5 +1,0 @@
-writeParam writes parameters in the Param_WR register, so the COMMAND register is not needed
-
-read ID, if ID is 1145, enable UV coefficients, this shouldn't run on 1142 at all
-
-Write in 
