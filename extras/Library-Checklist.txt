@@ -49,4 +49,4 @@
     | Visit https://github.com/e-radionicacom/[repo name]/settings/pages
     | Change to gh-pages branch and /docs folder
 ✅ | Check if docs are made correctly
-❌ | PR to Arduino Library Manager if not done already
+✅ | PR to Arduino Library Manager if not done already
