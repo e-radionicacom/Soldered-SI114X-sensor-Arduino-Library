@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['detected_0',['detected',['../class_adafruit___i2_c_device.html#ac7492b543fe4c0bb0d94a7bf1915cb2a',1,'Adafruit_I2CDevice']]]
+  ['changeaddress_0',['changeAddress',['../class_s_i114_x.html#abe78d99af10f0d67621c9f33fb861c9d',1,'SI114X']]]
 ];
