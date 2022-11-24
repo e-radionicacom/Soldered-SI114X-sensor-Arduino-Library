@@ -21,13 +21,13 @@
 bool SI114X::begin()
 {
     this->_i2c_addr = SI1142;
-    return this->Adafruit_SI1145::begin(_i2c_addr,&Wire);
-} 
+    return this->Adafruit_SI1145::begin(_i2c_addr, &Wire);
+}
 
 bool SI114X::begin(uint8_t _i2c_addr)
 {
     this->_i2c_addr = _i2c_addr;
-    return this->Adafruit_SI1145::begin(_i2c_addr,&Wire);
+    return this->Adafruit_SI1145::begin(_i2c_addr, &Wire);
 }
 
 bool SI114X::changeAddress(uint8_t _new_i2c_addr)
@@ -39,5 +39,5 @@ bool SI114X::changeAddress(uint8_t _new_i2c_addr)
     Wire.write(SI1145_BUSADDR);
     Wire.endTransmission(true);
     this->_i2c_addr = _new_i2c_addr;
-    return this->Adafruit_SI1145::begin(this->_i2c_addr,&Wire);
+    return this->Adafruit_SI1145::begin(this->_i2c_addr, &Wire);
 }
