@@ -21,7 +21,15 @@
 class SI114X : public Adafruit_SI1145
 {
   public:
-    SI114X();
+    SI114X() : Adafruit_SI1145()
+    {
+    }
+    bool begin();
+    bool begin(uint8_t _i2c_addr);
+    bool changeAddress(uint8_t _new_i2c_addr);
+
+  private:
+    uint8_t _i2c_addr;
 };
 
 #endif
