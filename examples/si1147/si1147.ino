@@ -1,42 +1,51 @@
 /**
  **************************************************
-
-   @file        si1147.ino
-   @brief       Example for reading light and UV intensity
-
-
-                Product used is www.solde.red/333041
-   @authors     Goran Juric for soldered.com
+ *
+ * @file        si1147.ino
+ * @brief       Example for reading light intensity with SI1147 sensor variant. For more info see solde.red/333076
+ *
+ *
+ * @authors     Goran Juric & Robert Soric @ soldered.com
  ***************************************************/
+
+// Connecting diagram
+// Plug in easyC cable into the SI114X Breakout board
 
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
 
-SI114X sensor;
+SI114X lightSensor; // initialize sensor
 
 void setup()
 {
-  Serial.begin(115200); //Begin serial communication with PC using 115200 baud rate
-  if (! sensor.begin(SI1147)) //Initialize sensor and specify which sensor is connected
-  {
-    Serial.println("Didn't find Si1147");
-    while (1);  //Loop forever if sensor is not found
-  }
+    Serial.begin(115200); // Begin serial communication with PC using 115200 baud rate
+
+    if (!lightSensor.begin(SI1147)) // Initialize sensor and specify which sensor is connected
+    {
+        Serial.println("Didn't find Si1147");
+        while (1)
+            ; // Loop forever if sensor is not found
+    }
 }
 
 void loop()
 {
-  float light;
-  light = sensor.readVisible(); // get light intensity
-  Serial.print("Light intensity: ");
-  Serial.print(light);
-  Serial.println(" lux.");
-  light = sensor.readIR(); // get light intensity
-  Serial.print("IR light intensity: ");
-  Serial.print(light);
-  Serial.println(" lux.");
-  int uv = sensor.readUV(); // If your sensor does not support UV, return value will be 0
-  Serial.print("UV index: ");
-  Serial.println(uv / 100.0); //UV needs to be divided by 100 because registers in sensor can
-                              //store only integers so using this method we can increase precision
-  delay(1000);
+    float visLight;
+    visLight = lightSensor.readVisible(); // get visible light intensity in lux
+    Serial.print("Light intensity: ");
+    Serial.print(visLight); // print visible light intensity
+    Serial.println(" lux.");
+
+    float IRLight;
+    IRLight = lightSensor.readIR(); // get infrared light intensity in lux
+    Serial.print("IR light intensity: ");
+    Serial.print(IRLight); // Print light intensity in lux units
+    Serial.println(" lux.");
+
+    int uvLight = lightSensor.readUV(); // The SI1147 also supports reading UV light
+                                        // If your sensor version does not support it, the value will be 0
+    Serial.print("UV index: ");
+    Serial.println(uvLight / 100.0); // UV needs to be divided by 100 because registers in sensor can
+                                     // store only integers so using this method we can increase precision
+
+    delay(1000); // wait a bit so the output isn't too fast
 }
