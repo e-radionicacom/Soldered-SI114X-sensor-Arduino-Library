@@ -48,6 +48,7 @@ boolean Adafruit_SI1145::begin(TwoWire *pBus) {
  */
 boolean Adafruit_SI1145::begin(uint8_t addr, TwoWire *pBus) {
   delay(25); // Added setup time according to Table 1 in the Si114x datasheet
+  
 
   if (i2c_dev)
     delete i2c_dev;
