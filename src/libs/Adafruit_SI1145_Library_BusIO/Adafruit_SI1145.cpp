@@ -55,7 +55,7 @@ boolean Adafruit_SI1145::begin(uint8_t addr, TwoWire *pBus) {
   }
 
   uint8_t id = read8(SI1145_REG_PARTID);
-  if (id != 0x45)
+  if (id != 0x60)
     return false; // look for SI1145
 
   reset();

@@ -2,33 +2,35 @@
  **************************************************
  *
  * @file        si1142.ino
- * @brief       Example for reading light intensity with SI1142 sensor variant. For more info see solde.red/333074
+ * @brief       Example for reading light intensity with SI1142 sensor variant. 
+ *              For more info see solde.red/333074
  *
  *
  * @authors     Goran Juric & Robert Soric @ soldered.com
  ***************************************************/
 
-// Connecting diagram
-// Plug in easyC cable into the SI114X Breakout board
+// To run this example, connect the SI114X breakout board with your Dasduino board via easyC
 
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
 
-SI114X lightSensor; // Create sensor object
+SI1142 lightSensor; // Create SI1142 sensor object
 
 void setup()
 {
     Serial.begin(115200);           // Begin serial communication with PC using 115200 baud rate
     
-    if (!lightSensor.begin(SI1142)) // Initialize sensor and specify which sensor is connected
+    if (!lightSensor.begin()) // Initialize sensor and specify which sensor is connected
     {
         Serial.println("Didn't find Si1142");
         while (1)
         {
             // Loop forever if sensor is not found
             delay(100);
-        }
-            
+        } 
     }
+
+    // Set sensor to do automatic measurement
+    //lightSensor.setMeasurementMode(MEASUREMENT_MODE_AUTO);
 }
 
 void loop()
