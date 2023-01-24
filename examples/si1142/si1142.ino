@@ -13,7 +13,7 @@
 
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
 
-SI114X lightSensor; // initialize sensor
+SI114X lightSensor; // Create sensor object
 
 void setup()
 {
@@ -23,23 +23,27 @@ void setup()
     {
         Serial.println("Didn't find Si1142");
         while (1)
-            ; // Loop forever if sensor is not found
+        {
+            // Loop forever if sensor is not found
+            delay(100);
+        }
+            
     }
 }
 
 void loop()
 {
-    float visLight;
+    uint16_t visLight;
     visLight = lightSensor.readVisible(); // get visible light intensity in lux
     Serial.print("Light intensity: ");
     Serial.print(visLight); // print visible light intensity
     Serial.println(" lux.");
 
-    float IRLight;
+    uint16_t IRLight;
     IRLight = lightSensor.readIR(); // get infrared light intensity in lux
     Serial.print("IR light intensity: ");
     Serial.print(IRLight); // Print light intensity in lux units
     Serial.println(" lux.");
 
-    delay(1000); // wait a bit so the output isn't too fast
+    delay(3000); // wait a bit so the output isn't too fast
 }

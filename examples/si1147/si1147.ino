@@ -30,13 +30,13 @@ void setup()
 void loop()
 {
     float visLight;
-    visLight = lightSensor.readVisible(); // get visible light intensity in lux
+    visLight = lightSensor.readVisible(); // Get visible light intensity in lux
     Serial.print("Light intensity: ");
-    Serial.print(visLight); // print visible light intensity
+    Serial.print(visLight); // Print visible light intensity
     Serial.println(" lux.");
 
     float IRLight;
-    IRLight = lightSensor.readIR(); // get infrared light intensity in lux
+    IRLight = lightSensor.readIR(); // Get infrared light intensity in lux
     Serial.print("IR light intensity: ");
     Serial.print(IRLight); // Print light intensity in lux units
     Serial.println(" lux.");
@@ -47,5 +47,5 @@ void loop()
     Serial.println(uvLight / 100.0); // UV needs to be divided by 100 because registers in sensor can
                                      // store only integers so using this method we can increase precision
 
-    delay(1000); // wait a bit so the output isn't too fast
+    delay(3000); // Wait a bit so the output isn't too fast
 }
