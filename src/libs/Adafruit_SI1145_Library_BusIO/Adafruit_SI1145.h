@@ -22,7 +22,7 @@
 #else
 #include "WProgram.h"
 #endif
-#include "Adafruit_I2CDevice.h"
+#include <Adafruit_I2CDevice.h>
 
 /* COMMANDS */
 #define SI1145_PARAM_QUERY 0x80
@@ -115,7 +115,6 @@
 #define SI1145_REG_MEASRATE0 0x08
 #define SI1145_REG_MEASRATE1 0x09
 #define SI1145_REG_PSRATE 0x0A
-#define SI1145_REG_ALSRATE 0x09
 #define SI1145_REG_PSLED21 0x0F
 #define SI1145_REG_PSLED3 0x10
 #define SI1145_REG_UCOEFF0 0x13
@@ -168,6 +167,5 @@ private:
   uint8_t readParam(uint8_t p);
   uint8_t writeParam(uint8_t p, uint8_t v);
   Adafruit_I2CDevice *i2c_dev = NULL; ///< Pointer to I2C bus interface
-  bool uv_flag = 0;
 };
 #endif
