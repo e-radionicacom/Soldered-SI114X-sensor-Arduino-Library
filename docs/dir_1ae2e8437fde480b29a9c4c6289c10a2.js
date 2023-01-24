@@ -8,5 +8,7 @@ var dir_1ae2e8437fde480b29a9c4c6289c10a2 =
     [ "Adafruit_SI1145.cpp", "_adafruit___s_i1145_8cpp.html", null ],
     [ "Adafruit_SI1145.h", "_adafruit___s_i1145_8h.html", "_adafruit___s_i1145_8h" ],
     [ "Adafruit_SPIDevice.cpp", "_adafruit___s_p_i_device_8cpp.html", null ],
-    [ "Adafruit_SPIDevice.h", "_adafruit___s_p_i_device_8h.html", "_adafruit___s_p_i_device_8h" ]
+    [ "Adafruit_SPIDevice.h", "_adafruit___s_p_i_device_8h.html", "_adafruit___s_p_i_device_8h" ],
+    [ "SI1142.cpp", "_s_i1142_8cpp.html", null ],
+    [ "SI1142.h", "_s_i1142_8h.html", "_s_i1142_8h" ]
 ];

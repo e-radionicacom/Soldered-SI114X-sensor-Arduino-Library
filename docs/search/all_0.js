@@ -14,7 +14,7 @@ var searchData=
   ['_5fdatamode_11',['_dataMode',['../class_adafruit___s_p_i_device.html#a861d028e4b576c8cfaae80962c3985d9',1,'Adafruit_SPIDevice']]],
   ['_5fdataorder_12',['_dataOrder',['../class_adafruit___s_p_i_device.html#a943973a4763b2e2e6e87c064571d5888',1,'Adafruit_SPIDevice']]],
   ['_5ffreq_13',['_freq',['../class_adafruit___s_p_i_device.html#aac05402c974a66df0021f3b8d2bc23d6',1,'Adafruit_SPIDevice']]],
-  ['_5fi2c_5faddr_14',['_i2c_addr',['../class_s_i114_x.html#a6b719fb0e3083756b5611fe971a34d77',1,'SI114X']]],
+  ['_5fi2c_5faddr_14',['_i2c_addr',['../class_s_i1142.html#a95564f744fef76f15526f3e8db21238c',1,'SI1142::_i2c_addr()'],['../class_s_i1147.html#ab9c05c4392d02af27e67aaa2fd0e24b4',1,'SI1147::_i2c_addr()']]],
   ['_5fi2cdevice_15',['_i2cdevice',['../class_adafruit___bus_i_o___register.html#a7ab2e3fb160496f0bfe98bab2cac59fe',1,'Adafruit_BusIO_Register']]],
   ['_5fmaxbuffersize_16',['_maxBufferSize',['../class_adafruit___i2_c_device.html#a514410b8b50390005cd791da82087f94',1,'Adafruit_I2CDevice']]],
   ['_5fmiso_17',['_miso',['../class_adafruit___s_p_i_device.html#a48a8691ed1be2e738899442bd31d3a86',1,'Adafruit_SPIDevice']]],
