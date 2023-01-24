@@ -13,17 +13,20 @@
 
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
 
-SI114X lightSensor; // initialize sensor
+SI1147 lightSensor; // initialize sensor
 
 void setup()
 {
     Serial.begin(115200); // Begin serial communication with PC using 115200 baud rate
 
-    if (!lightSensor.begin(SI1147)) // Initialize sensor and specify which sensor is connected
+    if (!lightSensor.begin()) // Initialize sensor and specify which sensor is connected
     {
         Serial.println("Didn't find Si1147");
         while (1)
-            ; // Loop forever if sensor is not found
+        {
+            // Loop forever if sensor is not found
+            delay(100);
+        } 
     }
 }
 

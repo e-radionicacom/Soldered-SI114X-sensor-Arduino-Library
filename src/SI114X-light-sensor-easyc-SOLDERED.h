@@ -9,23 +9,30 @@
  * @authors     Goran Juric for soldered.com
  ***************************************************/
 
-#ifndef _Light_Sensor_
-#define _Light_Sensor_
+#ifndef __LIGHT_SENSOR_SI114X_BREAKOUT__
+#define __LIGHT_SENSOR_SI114X_BREAKOUT__
 
 #include "Arduino.h"
 #include "libs/Adafruit_SI1145_Library_BusIO/Adafruit_SI1145.h"
+#include "libs/Adafruit_SI1145_Library_BusIO/SI1142.h"
 
-// I2C addresses of the two different sensor variants
-#define SI1142 0x5A
-#define SI1147 0x60
-
-class SI114X : public Adafruit_SI1145
+class SI1147 : public Adafruit_SI1145
 {
   public:
-    SI114X() : Adafruit_SI1145()
+    SI1147() : Adafruit_SI1145()
     {
     }
-    bool begin(uint8_t _i2c_addr);
+
+  private:
+    uint8_t _i2c_addr;
+};
+
+class SI1142 : public Adafruit_SI1142
+{
+  public:
+    SI1142() : Adafruit_SI1142()
+    {
+    }
 
   private:
     uint8_t _i2c_addr;
