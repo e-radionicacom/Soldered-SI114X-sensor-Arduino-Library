@@ -117,27 +117,56 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ae7336fdd912af11588bf989b823feb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a4ae7336fdd912af11588bf989b823feb">~Adafruit_SI1145</a> ()</td></tr>
 <tr class="memdesc:a4ae7336fdd912af11588bf989b823feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:a4ae7336fdd912af11588bf989b823feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5327d8e442920e0c0c9cf78e06b0fc9a"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a5327d8e442920e0c0c9cf78e06b0fc9a">begin</a> (uint8_t addr=SI1145_ADDR, TwoWire *pBus=&amp;Wire)</td></tr>
-<tr class="memdesc:a5327d8e442920e0c0c9cf78e06b0fc9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initize the driver, supplying both a <code>TwoWire</code> bus and I2C address.  <br /></td></tr>
-<tr class="separator:a5327d8e442920e0c0c9cf78e06b0fc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02279fdbca2a10a71a03354bfd3c9754"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a02279fdbca2a10a71a03354bfd3c9754">begin</a> (<a class="el" href="defines_8h.html#a591c22c3d5b2f177e599c7d72d824895">MEASUREMENT_MODE</a> mode, uint8_t addr=SI1145_ADDR, TwoWire *pBus=&amp;Wire)</td></tr>
+<tr class="memdesc:a02279fdbca2a10a71a03354bfd3c9754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initize the driver, supplying both a <code>TwoWire</code> bus and I2C address.  <br /></td></tr>
+<tr class="separator:a02279fdbca2a10a71a03354bfd3c9754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e799bd24e95e96e8e2fadcd92d1aafe"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a2e799bd24e95e96e8e2fadcd92d1aafe">begin</a> (TwoWire *pBus)</td></tr>
 <tr class="memdesc:a2e799bd24e95e96e8e2fadcd92d1aafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initize the driver, specifying the <code>TwoWire</code> bus to use.  <br /></td></tr>
 <tr class="separator:a2e799bd24e95e96e8e2fadcd92d1aafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7a22b92c14315e36b84a42498e970ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#ab7a22b92c14315e36b84a42498e970ea">reset</a> ()</td></tr>
 <tr class="memdesc:ab7a22b92c14315e36b84a42498e970ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the sensor's registers to an initial state.  <br /></td></tr>
 <tr class="separator:ab7a22b92c14315e36b84a42498e970ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d1715d966500b5f5f88568a5b4f780b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a9d1715d966500b5f5f88568a5b4f780b">readUV</a> ()</td></tr>
-<tr class="memdesc:a9d1715d966500b5f5f88568a5b4f780b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current UV reading.  <br /></td></tr>
-<tr class="separator:a9d1715d966500b5f5f88568a5b4f780b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279fe4b95e903b4e59b47e6dec99ba5b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a279fe4b95e903b4e59b47e6dec99ba5b">readUV</a> ()</td></tr>
+<tr class="memdesc:a279fe4b95e903b4e59b47e6dec99ba5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current UV reading.  <br /></td></tr>
+<tr class="separator:a279fe4b95e903b4e59b47e6dec99ba5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7295e72f69a558cd6b3ac382ac791688"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a7295e72f69a558cd6b3ac382ac791688">readIR</a> ()</td></tr>
-<tr class="memdesc:a7295e72f69a558cd6b3ac382ac791688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Infrared light level.  <br /></td></tr>
+<tr class="memdesc:a7295e72f69a558cd6b3ac382ac791688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the infrared light levels from the sensor.  <br /></td></tr>
 <tr class="separator:a7295e72f69a558cd6b3ac382ac791688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25bf65464093ec0ba5f9fdd884606a21"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a25bf65464093ec0ba5f9fdd884606a21">readVisible</a> ()</td></tr>
-<tr class="memdesc:a25bf65464093ec0ba5f9fdd884606a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Visible &amp; IR light levels.  <br /></td></tr>
+<tr class="memdesc:a25bf65464093ec0ba5f9fdd884606a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the visible light levels from the sensor.  <br /></td></tr>
 <tr class="separator:a25bf65464093ec0ba5f9fdd884606a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b058485d8305725020219839285ea16"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a9b058485d8305725020219839285ea16">readProx</a> ()</td></tr>
-<tr class="memdesc:a9b058485d8305725020219839285ea16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Proximity measurement - <b>Requires an attached IR LED</b>  <br /></td></tr>
-<tr class="separator:a9b058485d8305725020219839285ea16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8efe7824c073373767f4fabdcc36108e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a8efe7824c073373767f4fabdcc36108e">readProx</a> (int led)</td></tr>
+<tr class="memdesc:a8efe7824c073373767f4fabdcc36108e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Proximity measurement, <b>Requires an attached IR LED</b>  <br /></td></tr>
+<tr class="separator:a8efe7824c073373767f4fabdcc36108e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2150db62eb73ff08e57f26ff00cff9f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a2150db62eb73ff08e57f26ff00cff9f8">setALSMeasurementMode</a> (<a class="el" href="defines_8h.html#a591c22c3d5b2f177e599c7d72d824895">MEASUREMENT_MODE</a> mode)</td></tr>
+<tr class="memdesc:a2150db62eb73ff08e57f26ff00cff9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the according measurement mode for ambient light sensor.  <br /></td></tr>
+<tr class="separator:a2150db62eb73ff08e57f26ff00cff9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfaa083014c1e7cef4f13d5f85bf3ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a9cfaa083014c1e7cef4f13d5f85bf3ad">setAutoMeasurementRate</a> (uint16_t rate)</td></tr>
+<tr class="memdesc:a9cfaa083014c1e7cef4f13d5f85bf3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the auto measurement rate as a raw uint8_t.  <br /></td></tr>
+<tr class="separator:a9cfaa083014c1e7cef4f13d5f85bf3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700eb4d5b7e5acab50df603341b11580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a700eb4d5b7e5acab50df603341b11580">setAutoMeasurementRate</a> (<a class="el" href="defines_8h.html#ac2eb77c890bb9403df6379d0f7c4c9a6">AUTO_MEAS_RATE</a> rate)</td></tr>
+<tr class="memdesc:a700eb4d5b7e5acab50df603341b11580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the auto measurement rate.  <br /></td></tr>
+<tr class="separator:a700eb4d5b7e5acab50df603341b11580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f9fe687743dbdea8a1a87f9f45b22e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a64f9fe687743dbdea8a1a87f9f45b22e">enableProximityLED</a> (int led)</td></tr>
+<tr class="memdesc:a64f9fe687743dbdea8a1a87f9f45b22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable proximity measurement on given LED pin.  <br /></td></tr>
+<tr class="separator:a64f9fe687743dbdea8a1a87f9f45b22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356f50d8f872230351f40eac50c6e2eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a356f50d8f872230351f40eac50c6e2eb">setPSMeasurementMode</a> (<a class="el" href="defines_8h.html#a591c22c3d5b2f177e599c7d72d824895">MEASUREMENT_MODE</a> mode)</td></tr>
+<tr class="memdesc:a356f50d8f872230351f40eac50c6e2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the according measurement mode for proximity sensor.  <br /></td></tr>
+<tr class="separator:a356f50d8f872230351f40eac50c6e2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f064288ba93f9aae9e5a38da5151b77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a6f064288ba93f9aae9e5a38da5151b77">setUVMeasurementMode</a> (<a class="el" href="defines_8h.html#a591c22c3d5b2f177e599c7d72d824895">MEASUREMENT_MODE</a> mode)</td></tr>
+<tr class="separator:a6f064288ba93f9aae9e5a38da5151b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57c51bca960995b39edc844de8dba76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#af57c51bca960995b39edc844de8dba76">enableALSInterrupts</a> ()</td></tr>
+<tr class="memdesc:af57c51bca960995b39edc844de8dba76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable interrupts by the ambient light sensor.  <br /></td></tr>
+<tr class="separator:af57c51bca960995b39edc844de8dba76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0782cf9169f06223369c0071c744185d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a0782cf9169f06223369c0071c744185d">clearALSInterrupt</a> ()</td></tr>
+<tr class="memdesc:a0782cf9169f06223369c0071c744185d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the interrupt set by the ambient light sensor.  <br /></td></tr>
+<tr class="separator:a0782cf9169f06223369c0071c744185d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70001464506247523c60eabc8878ddf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a70001464506247523c60eabc8878ddf1">enablePSInterrupts</a> ()</td></tr>
+<tr class="memdesc:a70001464506247523c60eabc8878ddf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable interrupts by the proximity sensor.  <br /></td></tr>
+<tr class="separator:a70001464506247523c60eabc8878ddf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7d58fd13878530f9455c7a6b0ff6e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a9c7d58fd13878530f9455c7a6b0ff6e5">clearPSInterrupts</a> ()</td></tr>
+<tr class="memdesc:a9c7d58fd13878530f9455c7a6b0ff6e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the interrupt set by the proximity sensor.  <br /></td></tr>
+<tr class="separator:a9c7d58fd13878530f9455c7a6b0ff6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -157,6 +186,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a7c8a724faae1190100b81d065cbbfce8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_adafruit___i2_c_device.html">Adafruit_I2CDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a7c8a724faae1190100b81d065cbbfce8">i2c_dev</a> = NULL</td></tr>
 <tr class="memdesc:a7c8a724faae1190100b81d065cbbfce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to I2C bus interface.  <br /></td></tr>
 <tr class="separator:a7c8a724faae1190100b81d065cbbfce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f36da39a9a6f2c61f5e4bc42ae4a484"><td class="memItemLeft" align="right" valign="top"><a class="el" href="defines_8h.html#a591c22c3d5b2f177e599c7d72d824895">MEASUREMENT_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a3f36da39a9a6f2c61f5e4bc42ae4a484">currentMeasurementMode</a></td></tr>
+<tr class="separator:a3f36da39a9a6f2c61f5e4bc42ae4a484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8505148ed832928a1275797467cd7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a9c8505148ed832928a1275797467cd7b">ps1LEDEnabled</a> = false</td></tr>
+<tr class="separator:a9c8505148ed832928a1275797467cd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1f2015ad757a334b0269bee49418a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___s_i1145.html#a6b1f2015ad757a334b0269bee49418a8">ps2LEDEnabled</a> = false</td></tr>
+<tr class="separator:a6b1f2015ad757a334b0269bee49418a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Library for using the Si1145 UV/IR/Visible Light Sensor. </p>
@@ -201,8 +236,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2e799bd24e95e96e8e2fadcd92d1aafe" name="a2e799bd24e95e96e8e2fadcd92d1aafe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e799bd24e95e96e8e2fadcd92d1aafe">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
+<a id="a02279fdbca2a10a71a03354bfd3c9754" name="a02279fdbca2a10a71a03354bfd3c9754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02279fdbca2a10a71a03354bfd3c9754">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,33 +245,12 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">boolean Adafruit_SI1145::begin </td>
           <td>(</td>
-          <td class="paramtype">TwoWire *&#160;</td>
-          <td class="paramname"><em>pBus</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a591c22c3d5b2f177e599c7d72d824895">MEASUREMENT_MODE</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initize the driver, specifying the <code>TwoWire</code> bus to use. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pBus</td><td>Pointer to the <code>TwoWire</code> I2C bus to use </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean true: success false: failure to initialize the sensor </dd></dl>
-
-</div>
-</div>
-<a id="a5327d8e442920e0c0c9cf78e06b0fc9a" name="a5327d8e442920e0c0c9cf78e06b0fc9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5327d8e442920e0c0c9cf78e06b0fc9a">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">boolean Adafruit_SI1145::begin </td>
-          <td>(</td>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>addr</em> = <code>SI1145_ADDR</code>, </td>
         </tr>
@@ -263,6 +277,144 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean true: success false: failure to initize the sensor </dd></dl>
+
+</div>
+</div>
+<a id="a2e799bd24e95e96e8e2fadcd92d1aafe" name="a2e799bd24e95e96e8e2fadcd92d1aafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e799bd24e95e96e8e2fadcd92d1aafe">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Adafruit_SI1145::begin </td>
+          <td>(</td>
+          <td class="paramtype">TwoWire *&#160;</td>
+          <td class="paramname"><em>pBus</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initize the driver, specifying the <code>TwoWire</code> bus to use. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pBus</td><td>Pointer to the <code>TwoWire</code> I2C bus to use </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean true: success false: failure to initialize the sensor </dd></dl>
+
+</div>
+</div>
+<a id="a0782cf9169f06223369c0071c744185d" name="a0782cf9169f06223369c0071c744185d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0782cf9169f06223369c0071c744185d">&#9670;&#160;</a></span>clearALSInterrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_SI1145::clearALSInterrupt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the interrupt set by the ambient light sensor. </p>
+<dl class="section note"><dt>Note</dt><dd>This must be called every time the interrupt flag is read. Check example light_interruptOnComplete for more info.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="a9c7d58fd13878530f9455c7a6b0ff6e5" name="a9c7d58fd13878530f9455c7a6b0ff6e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c7d58fd13878530f9455c7a6b0ff6e5">&#9670;&#160;</a></span>clearPSInterrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_SI1145::clearPSInterrupts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the interrupt set by the proximity sensor. </p>
+<dl class="section note"><dt>Note</dt><dd>This must be called every time the interrupt flag is read. Check example proximity_interruptOnComplete for more info.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="af57c51bca960995b39edc844de8dba76" name="af57c51bca960995b39edc844de8dba76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57c51bca960995b39edc844de8dba76">&#9670;&#160;</a></span>enableALSInterrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_SI1145::enableALSInterrupts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable interrupts by the ambient light sensor. </p>
+<dl class="section note"><dt>Note</dt><dd>Interrupts will be triggered on measurement completion, when a new value is ready to be read.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="a64f9fe687743dbdea8a1a87f9f45b22e" name="a64f9fe687743dbdea8a1a87f9f45b22e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f9fe687743dbdea8a1a87f9f45b22e">&#9670;&#160;</a></span>enableProximityLED()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_SI1145::enableProximityLED </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>led</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable proximity measurement on given LED pin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">led</td><td>selection of which led pin to enable (1 for LED1 and 2 for LED2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="a70001464506247523c60eabc8878ddf1" name="a70001464506247523c60eabc8878ddf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70001464506247523c60eabc8878ddf1">&#9670;&#160;</a></span>enablePSInterrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_SI1145::enablePSInterrupts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable interrupts by the proximity sensor. </p>
+<dl class="section note"><dt>Note</dt><dd>Interrupts will be triggered on measurement completion, when a new value is ready to be read.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
 </div>
 </div>
@@ -334,8 +486,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the Infrared light level. </p>
-<dl class="section return"><dt>Returns</dt><dd>uint16_t The Infrared light level </dd></dl>
+<p>Read the infrared light levels from the sensor. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint16_t of the IR light levels </dd></dl>
 
 </div>
 </div>
@@ -365,8 +517,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b058485d8305725020219839285ea16" name="a9b058485d8305725020219839285ea16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b058485d8305725020219839285ea16">&#9670;&#160;</a></span>readProx()</h2>
+<a id="a8efe7824c073373767f4fabdcc36108e" name="a8efe7824c073373767f4fabdcc36108e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8efe7824c073373767f4fabdcc36108e">&#9670;&#160;</a></span>readProx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,26 +526,33 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">uint16_t Adafruit_SI1145::readProx </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>led</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the Proximity measurement - <b>Requires an attached IR LED</b> </p>
-<dl class="section return"><dt>Returns</dt><dd>uint16_t The proximity measurement </dd></dl>
+<p>Gets the Proximity measurement, <b>Requires an attached IR LED</b> </p>
+<dl class="section note"><dt>Note</dt><dd>View autoMeasureProximity.ino example for more info</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td>led, selector which LED's proximity to read (1 for LED1 and 2 for LED2)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>uint16_t The proximity measurement, 0 if invalid LED selection </dd></dl>
 
 </div>
 </div>
-<a id="a9d1715d966500b5f5f88568a5b4f780b" name="a9d1715d966500b5f5f88568a5b4f780b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d1715d966500b5f5f88568a5b4f780b">&#9670;&#160;</a></span>readUV()</h2>
+<a id="a279fe4b95e903b4e59b47e6dec99ba5b" name="a279fe4b95e903b4e59b47e6dec99ba5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279fe4b95e903b4e59b47e6dec99ba5b">&#9670;&#160;</a></span>readUV()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t Adafruit_SI1145::readUV </td>
+          <td class="memname">float Adafruit_SI1145::readUV </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -403,7 +562,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the current UV reading. </p>
-<dl class="section return"><dt>Returns</dt><dd>uint16_t The the UV index * 100 (divide by 100 to get the index) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>float The the UV index </dd></dl>
 
 </div>
 </div>
@@ -423,8 +582,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the Visible &amp; IR light levels. </p>
-<dl class="section return"><dt>Returns</dt><dd>uint16_t The Visible &amp; IR light levels </dd></dl>
+<p>Read the visible light levels from the sensor. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint16_t of the visible light levels </dd></dl>
 
 </div>
 </div>
@@ -444,6 +603,134 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reset the sensor's registers to an initial state. </p>
+
+</div>
+</div>
+<a id="a2150db62eb73ff08e57f26ff00cff9f8" name="a2150db62eb73ff08e57f26ff00cff9f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2150db62eb73ff08e57f26ff00cff9f8">&#9670;&#160;</a></span>setALSMeasurementMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_SI1145::setALSMeasurementMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a591c22c3d5b2f177e599c7d72d824895">MEASUREMENT_MODE</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the according measurement mode for ambient light sensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">measMode</td><td>MEASUREMENT_MODE_AUTO (1) means the sensor will automatically make measurements and store the results, MEASUREMENT_MODE_CONVERSION (2) means that the sensor will be in standby and perform measurements only when asked, useful to save power</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="a700eb4d5b7e5acab50df603341b11580" name="a700eb4d5b7e5acab50df603341b11580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700eb4d5b7e5acab50df603341b11580">&#9670;&#160;</a></span>setAutoMeasurementRate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_SI1145::setAutoMeasurementRate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#ac2eb77c890bb9403df6379d0f7c4c9a6">AUTO_MEAS_RATE</a>&#160;</td>
+          <td class="paramname"><em>rate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the auto measurement rate. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">AUTO_MEAS_RATE</td><td>the desired measurement rate</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Check the AUTO_MEAS_RATE enum for all the values that are available</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="a9cfaa083014c1e7cef4f13d5f85bf3ad" name="a9cfaa083014c1e7cef4f13d5f85bf3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cfaa083014c1e7cef4f13d5f85bf3ad">&#9670;&#160;</a></span>setAutoMeasurementRate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_SI1145::setAutoMeasurementRate </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>rate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the auto measurement rate as a raw uint8_t. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rate</td><td>a uint16_t of the measurement rate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The total pause will be 31.25uS * the set rate</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="a356f50d8f872230351f40eac50c6e2eb" name="a356f50d8f872230351f40eac50c6e2eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356f50d8f872230351f40eac50c6e2eb">&#9670;&#160;</a></span>setPSMeasurementMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_SI1145::setPSMeasurementMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a591c22c3d5b2f177e599c7d72d824895">MEASUREMENT_MODE</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the according measurement mode for proximity sensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">measMode</td><td>MEASUREMENT_MODE_AUTO (1) means the sensor will automatically make measurements and store the results, MEASUREMENT_MODE_CONVERSION (2) means that the sensor will be in standby and perform measurements only when asked, useful to save power</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+
+</div>
+</div>
+<a id="a6f064288ba93f9aae9e5a38da5151b77" name="a6f064288ba93f9aae9e5a38da5151b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f064288ba93f9aae9e5a38da5151b77">&#9670;&#160;</a></span>setUVMeasurementMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Adafruit_SI1145::setUVMeasurementMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="defines_8h.html#a591c22c3d5b2f177e599c7d72d824895">MEASUREMENT_MODE</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -520,6 +807,28 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3f36da39a9a6f2c61f5e4bc42ae4a484" name="a3f36da39a9a6f2c61f5e4bc42ae4a484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f36da39a9a6f2c61f5e4bc42ae4a484">&#9670;&#160;</a></span>currentMeasurementMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="defines_8h.html#a591c22c3d5b2f177e599c7d72d824895">MEASUREMENT_MODE</a> Adafruit_SI1145::currentMeasurementMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7c8a724faae1190100b81d065cbbfce8" name="a7c8a724faae1190100b81d065cbbfce8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c8a724faae1190100b81d065cbbfce8">&#9670;&#160;</a></span>i2c_dev</h2>
 
@@ -544,6 +853,50 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9c8505148ed832928a1275797467cd7b" name="a9c8505148ed832928a1275797467cd7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8505148ed832928a1275797467cd7b">&#9670;&#160;</a></span>ps1LEDEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Adafruit_SI1145::ps1LEDEnabled = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b1f2015ad757a334b0269bee49418a8" name="a6b1f2015ad757a334b0269bee49418a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b1f2015ad757a334b0269bee49418a8">&#9670;&#160;</a></span>ps2LEDEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Adafruit_SI1145::ps2LEDEnabled = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_adafruit___s_i1145_8h_source.html">Adafruit_SI1145.h</a></li>
 <li><a class="el" href="_adafruit___s_i1145_8cpp.html">Adafruit_SI1145.cpp</a></li>
@@ -556,7 +909,7 @@ Private Attributes</h2></td></tr>
     <ul>
         <li class="navelem"><a class="el" href="class_adafruit___s_i1145.html">Adafruit_SI1145</a></li>
         <li class="footer">
-            Generated on Wed Feb 15 2023 09:52:40 for SI114X sensor Arduino library by <a href="http://www.doxygen.org/index.html">
+            Generated on Tue Feb 28 2023 11:01:18 for SI114X sensor Arduino library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.6.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.

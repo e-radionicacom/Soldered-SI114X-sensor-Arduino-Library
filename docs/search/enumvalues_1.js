@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['spi_5fbitorder_5flsbfirst_0',['SPI_BITORDER_LSBFIRST',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5a7a075a3dd6855542eb39b6549ec1f9a6',1,'Adafruit_SPIDevice.h']]],
-  ['spi_5fbitorder_5fmsbfirst_1',['SPI_BITORDER_MSBFIRST',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5a86a2a85476827647da7b3ea36b0bd461',1,'Adafruit_SPIDevice.h']]]
+  ['measurement_5fmode_5fauto_0',['MEASUREMENT_MODE_AUTO',['../defines_8h.html#a591c22c3d5b2f177e599c7d72d824895a5b443ff8e71e033a95ac116cbe4e018c',1,'defines.h']]],
+  ['measurement_5fmode_5fconversion_1',['MEASUREMENT_MODE_CONVERSION',['../defines_8h.html#a591c22c3d5b2f177e599c7d72d824895a6a7f89af04dfa3e35bf94e8a9ebc185b',1,'defines.h']]]
 ];

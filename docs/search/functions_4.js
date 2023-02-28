@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['end_0',['end',['../class_adafruit___i2_c_device.html#afe9d8e8a154d29acaaeb1d00ddd8da08',1,'Adafruit_I2CDevice']]],
-  ['endtransaction_1',['endTransaction',['../class_adafruit___s_p_i_device.html#a65b517b7372df56322b807a08d067f8b',1,'Adafruit_SPIDevice']]]
+  ['detected_0',['detected',['../class_adafruit___i2_c_device.html#ac7492b543fe4c0bb0d94a7bf1915cb2a',1,'Adafruit_I2CDevice']]]
 ];
