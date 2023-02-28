@@ -14,7 +14,7 @@
   Written by Limor Fried/Ladyada for Adafruit Industries.
   BSD license, all text above must be included in any redistribution
 
-  Modified by Soldered electronics for use on SI114X breakout board
+  Modified by Soldered for use on SI114X breakout board with some expanded functionality
  ****************************************************/
 #ifndef _SI1142_H_
 #define _SI1142_H_
@@ -25,6 +25,7 @@
 #include "WProgram.h"
 #endif
 #include "Adafruit_I2CDevice.h"
+#include "defines.h"
 
 /* COMMANDS */
 #define SI1142_PARAM_QUERY 0x80
@@ -89,9 +90,9 @@
 #define SI1142_PARAM_ALSIRADCGAIN       0x1E
 #define SI1142_PARAM_ALSIRADCMISC       0x1F
 #define SI1142_PARAM_ALSIRADCMISC_RANGE 0x20
-#define SI1142_PARAM_ADCCOUNTER_511CLK 0x70
-#define SI1142_PARAM_ADCMUX_SMALLIR 0x00
-#define SI1142_PARAM_ADCMUX_LARGEIR 0x03
+#define SI1142_PARAM_ADCCOUNTER_511CLK  0x70
+#define SI1142_PARAM_ADCMUX_SMALLIR     0x00
+#define SI1142_PARAM_ADCMUX_LARGEIR     0x03
 
 #define SI1142_PARAM_MAX_LED12_CURRENT 0xFF
 #define SI1142_PARAM_MAX_LED3_CURRENT  0x0F
@@ -149,29 +150,61 @@
 #define SI1142_REG_PARAMRD  0x2E
 #define SI1142_REG_CHIPSTAT 0x30
 
+#define SI1142_ADC_OFFSET_256 0x80
+
+#define SI1142_PARAM_ALS_RATE_MAX 0x08
+#define SI1142_PARAM_ALS_ADCGAIN  0x00
+
+#define SI1142_PARAM_IR_RATE_MAX 0x08
+#define SI1142_PARAM_IR_ADCGAIN  0x00
+
+#define SI1142_PARAM_ENABLE_INT      0x01
+#define SI1142_PARAM_INT_ON_COMPLETE 0x00
+#define SI1142_PARAM_ALS_ENABLE_INT  0x01
+#define SI1142_PARAM_PS1_ENABLE_INT  0x04
+#define SI1142_PARAM_PS2_ENABLE_INT  0x08
+
+#define SI1142_PARAM_ALS_CLEAR_INT 0x01
+#define SI1142_PARAM_PS1_CLEAR_INT 0x04
+#define SI1142_PARAM_PS2_CLEAR_INT 0x08
+
+#define SI1142_PARAM_PS_ADC_GAIN     0x00
+#define SI1142_PARAM_PS_RATE_MAX     0x08
+#define SI1142_PARAM_PS1_LED_CURRENT 0x05
+#define SI1142_PARAM_PS2_LED_CURRENT 0x50
+
 #define SI1142_ADDR 0x5A
 
-#define MEASUREMENT_MODE_AUTO       1
-#define MEASUREMENT_MODE_CONVERSION 2
-
 /**
- * @brief Library for using the Si1145 UV/IR/Visible Light Sensor
+ * @brief Library for using the Si1142 UV/IR/Visible Light Sensor
+ *
+ * @note    Based on Adafruit's SI1145 library but expanded
  *
  */
-class Adafruit_SI1142
+class Soldered_SI1142
 {
   public:
-    Adafruit_SI1142(void);
-    ~Adafruit_SI1142();
-    boolean begin(uint8_t addr = SI1142_ADDR, TwoWire *pBus = &Wire);
+    Soldered_SI1142(void);
+    ~Soldered_SI1142();
+    boolean begin(MEASUREMENT_MODE mode, uint8_t addr = SI1142_ADDR, TwoWire *pBus = &Wire);
     boolean begin(TwoWire *pBus);
     void reset();
 
     uint16_t readIR();
     uint16_t readVisible();
-    uint16_t readProx();
+    uint16_t readProx(int led);
 
-    void setMeasurementMode(int measMode);
+    void setALSMeasurementMode(MEASUREMENT_MODE mode);
+    void setAutoMeasurementRate(uint8_t rate);
+    void setAutoMeasurementRate(AUTO_MEAS_RATE rate);
+
+    void enableProximityLED(int led);
+    void setPSMeasurementMode(MEASUREMENT_MODE mode);
+
+    void enableALSInterrupts();
+    void clearALSInterrupt();
+    void enablePSInterrupts();
+    void clearPSInterrupts();
 
   private:
     uint16_t read16(uint8_t addr);
@@ -179,6 +212,9 @@ class Adafruit_SI1142
     void write8(uint8_t reg, uint8_t val);
     uint8_t readParam(uint8_t p);
     uint8_t writeParam(uint8_t p, uint8_t v);
-    Adafruit_I2CDevice *i2c_dev = NULL; ///< Pointer to I2C bus interface
+    Adafruit_I2CDevice *i2c_dev = NULL; // Pointer to I2C bus interface
+    MEASUREMENT_MODE currentMeasurementMode;
+    bool ps1LEDEnabled = false; // Set defaults for if the proximity sensor LED's are enabled
+    bool ps2LEDEnabled = false;
 };
 #endif
