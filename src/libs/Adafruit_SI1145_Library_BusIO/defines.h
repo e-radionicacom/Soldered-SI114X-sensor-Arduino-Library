@@ -1,0 +1,20 @@
+#ifndef __SI114X_DEFINES__
+#define __SI114X_DEFINES__
+
+enum MEASUREMENT_MODE
+{
+    MEASUREMENT_MODE_AUTO,
+    MEASUREMENT_MODE_CONVERSION
+};
+
+enum AUTO_MEAS_RATE
+{
+    OFF = 0x00,
+    AUTO_10_MS = 0x84,
+    AUTO_20_MS = 0x94,
+    AUTO_100_MS = 0xB9,
+    AUTO_500_MS = 0xDF,
+    AUTO_2000_MS = 0xFF
+};
+
+#endif
