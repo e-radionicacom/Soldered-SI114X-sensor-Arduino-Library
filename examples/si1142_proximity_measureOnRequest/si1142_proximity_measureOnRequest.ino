@@ -2,7 +2,6 @@
  **************************************************
  *
  * @file        si1142_proximity_measureOnRequest.ino
- * 
  * @brief       Example for reading proximity on SI1142 sensor in forced conversion mode using an external UV LED.
  *              For more info see solde.red/333074
  *
@@ -17,6 +16,8 @@
 
 // In this example, the device is set into 'Forced Conversion' measurement mode, meaning it will complete a measurement
 // and then go back to standby, useful for saving power
+
+// NOTE: For this example to work, you must remove the short on JP5/JP6 on your SI114X breakout board
 
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
 
@@ -38,8 +39,8 @@ void setup()
 
     // Enable proximity measurement with UV LED connected to pin LED 1 and measurement MODE CONVERSION
     lightSensor.enableProximityLED(1);
-
     // You may also use the LED2 pin or both of them
+    
 }
 
 void loop()

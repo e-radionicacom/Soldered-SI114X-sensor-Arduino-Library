@@ -4,7 +4,6 @@
 
 | ![Digital light & proximity sensor SI1142 breakout](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :------------------------------------------------------------------------------------------------------------------------: |
-
 | [Digital light & proximity sensor SI1142 breakout](https://www.solde.red/333074)
 
 | ![UV sensor SI1147 breakout](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
@@ -51,7 +50,7 @@ At Soldered, we design and manufacture a wide selection of electronic products t
 ### Original source
 
 ​
-This library is possible thanks to original [arduino-mcp23017](https://github.com/blemasle/arduino-mcp23017) library. Thank you, blemasle.
+This library is possible thanks to original [arduino-mcp23017](https://github.com/adafruit/Adafruit_SI1145_Library) library. Thank you, Adafruit.
 
 ### Open-source license
 

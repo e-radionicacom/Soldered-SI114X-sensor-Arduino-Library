@@ -2,7 +2,6 @@
  **************************************************
  *
  * @file        si1142_light_measureOnRequest.ino
- * 
  * @brief       Example for reading light intensity with SI1142 sensor in forced conversion mode.
  *              For more info see solde.red/333074
  *
@@ -36,7 +35,8 @@ void setup()
 
 void loop()
 {
-    // Print reading
+    // Periodically print sensor readings
+
     uint16_t visLight;                    // Variable to store visible light intensity
     visLight = lightSensor.readVisible(); // Get visible light intensity in lux
     Serial.print("Light intensity: ");

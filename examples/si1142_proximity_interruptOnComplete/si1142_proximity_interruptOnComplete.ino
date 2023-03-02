@@ -2,7 +2,6 @@
  **************************************************
  *
  * @file        si1142_proximity_interruptOnComplete.ino
- * 
  * @brief       Example for sending an interrupt when a measurement cycle is complete with the SI1142 sensor.
  *              For more info see solde.red/333074
  *
@@ -15,8 +14,7 @@
 // IR LED and the breakout board need to be placed close to each other so the sensor can detect IR light reflection
 // which indicates proximity
 
-// In this example, the device is set into 'Forced Conversion' measurement mode, meaning it will complete a measurement
-// and then go back to standby, useful for saving power
+// NOTE: For this example to work, you must remove the short on JP5/JP6 on your SI114X breakout board
 
 #define INT_PIN 32 // Change interrupt pin here
 
@@ -30,10 +28,6 @@ void setup()
     Serial.begin(115200); // Begin serial communication with PC using 115200 baud rate
     pinMode(INT_PIN, INPUT_PULLUP); // Set the pin mode for the interrupt pin
 
-    // Attatch the interrupt pin to the interrupt service routine
-    // INT pin gets pulled LOW when there is an interrupt, so detect falling edge
-    attachInterrupt(digitalPinToInterrupt(INT_PIN), ISR, FALLING);
-
     if (!lightSensor.begin(MEASUREMENT_MODE_AUTO)) // Initialize sensor
     {
         Serial.println("Didn't find SI1142");
@@ -44,13 +38,18 @@ void setup()
         }
     }
 
-    // Enable proximity measurement with UV LED connected to pin LED 1 and measurement MODE CONVERSION
-    lightSensor.enableProximityLED(1);
-    // You may also use the LED2 pin or both of them
+    // Attatch the interrupt pin to the interrupt service routine
+    // INT pin gets pulled LOW when there is an interrupt, so detect falling edge
+    attachInterrupt(digitalPinToInterrupt(INT_PIN), ISR, FALLING);
 
     // Set the auto measurement rate
     // Interrupt should thus happen approx every 2s
     lightSensor.setAutoMeasurementRate(AUTO_2000_MS);
+
+    // Enable proximity measurement with UV LED connected to pin LED 1 and measurement mode AUTO
+    // Make sure you set the measurement rate first
+    lightSensor.enableProximityLED(1);
+    // You may also use the LED2 pin or both of them
 
     // Enable PS interrupts
     // This will enable interrupts for the previously initialized LED pins

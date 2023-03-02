@@ -3,7 +3,7 @@
  *
  * @file        si1147_light_UV_interruptOnComplete.ino
  * @brief       Example for sending an interrupt when a measurement cycle is complete with the SI1147 sensor.
- *              For more info see solde.red/333074
+ *              For more info see solde.red/333076
  *
  *
  * @authors     Robert Soric @ soldered.com
@@ -27,10 +27,6 @@ void setup()
     Serial.begin(115200);           // Begin serial communication with PC using 115200 baud rate
     pinMode(INT_PIN, INPUT_PULLUP); // Set the pin mode for the interrupt pin
 
-    // Attatch the interrupt pin to the interrupt service routine
-    // INT pin gets pulled LOW when there is an interrupt, so detect falling edge
-    attachInterrupt(digitalPinToInterrupt(INT_PIN), ISR, FALLING);
-
     if (!lightSensor.begin(MEASUREMENT_MODE_AUTO)) // Initialize sensor in auto mode
     {
         Serial.println("Didn't find Si1147");
@@ -41,10 +37,15 @@ void setup()
         }
     }
 
-    // Interrupt should happen approx. every 2s
+    // Attatch the interrupt pin to the interrupt service routine
+    // INT pin gets pulled LOW when there is an interrupt, so detect falling edge
+    attachInterrupt(digitalPinToInterrupt(INT_PIN), ISR, FALLING);
+
+    // Set the measurement rate
+    // Thus, interrupt should happen approx. every 2s
     lightSensor.setAutoMeasurementRate(AUTO_2000_MS);
 
-    // Enable interrupts
+    // Enable interrupts for light sensor
     lightSensor.enableALSInterrupts();
 }
 

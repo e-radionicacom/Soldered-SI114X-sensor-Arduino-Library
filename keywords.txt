@@ -1,26 +1,27 @@
 ##################################################
-# Syntax Coloring Map For Soldered-digital-light-sensor
+# Syntax Coloring Map For Soldered SI114X Light Sensor
 ##################################################
 
 ##################################################
 # Datatypes (KEYWORD1)
 ##################################################
 
-SI114X			KEYWORD1
+SI1142			KEYWORD1
+SI1147			KEYWORD1
 
 ##################################################
 # Methods and Functions (KEYWORD2)
 ##################################################
 
-readUV			KEYWORD2
 begin			KEYWORD2
-readIR	KEYWORD2
+enableProximityLED			KEYWORD2
 readVisible	KEYWORD2
+readIR	KEYWORD2
 readProx		KEYWORD2
-init			KEYWORD2
-getReg			KEYWORD2
-setIRSensitivity	KEYWORD2
-setVISSensitivity	KEYWORD2
+readUV			KEYWORD2
+setAutoMeasurementRate			KEYWORD2
+enableALSInterrupts			KEYWORD2
+enablePSInterrupts			KEYWORD2
 
 ##################################################
 # Constants (LITERAL1)
@@ -28,3 +29,10 @@ setVISSensitivity	KEYWORD2
 
 SI1142		LITERAL1
 SI1147		LITERAL1
+MEASUREMENT_MODE_CONVERSION 			LITERAL1
+MEASUREMENT_MODE_AUTO 			LITERAL1
+AUTO_10_MS			LITERAL1
+AUTO_20_MS			LITERAL1
+AUTO_100_MS			LITERAL1
+AUTO_500_MS			LITERAL1
+AUTO_2000_MS			LITERAL1
