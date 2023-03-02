@@ -23,7 +23,7 @@ SI1147 lightSensor;              // Create SI1147 sensor object
 volatile bool interrupt = false; // Variable which stores if an interrupt occured
 
 // Interrupt service routine which runs on any interrupt recieved
-void ISR()
+void isr()
 {
     interrupt = true;
 }
@@ -45,7 +45,7 @@ void setup()
 
     // Attatch the interrupt pin to the interrupt service routine
     // INT pin gets pulled LOW when there is an interrupt, so detect falling edge
-    attachInterrupt(digitalPinToInterrupt(INT_PIN), ISR, FALLING);
+    attachInterrupt(digitalPinToInterrupt(INT_PIN), isr, FALLING);
 
     // Set the measurement rate
     // Thus, interrupt should happen approx. every 2s
