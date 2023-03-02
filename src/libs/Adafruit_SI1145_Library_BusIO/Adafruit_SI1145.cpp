@@ -54,6 +54,7 @@ boolean Adafruit_SI1145::begin(TwoWire *pBus)
  */
 boolean Adafruit_SI1145::begin(MEASUREMENT_MODE mode, uint8_t addr, TwoWire *pBus)
 {
+
     // Delay the minimum required amount of time to make sure the sensor is ready to be configured
     delay(25);
 
@@ -65,25 +66,22 @@ boolean Adafruit_SI1145::begin(MEASUREMENT_MODE mode, uint8_t addr, TwoWire *pBu
         return false;
     }
 
-    // Check if the part ID corresponds to SI1145
+    // Check if the part ID corresponds to SI1147
     uint8_t id = read8(SI1145_REG_PARTID);
     if (id != 0x47)
         return false;
 
     reset();
 
-    // Set UVindex measurement coefficients!
+    // Set UVindex measurement coefficients
     write8(SI1145_REG_UCOEFF0, 0x29);
     write8(SI1145_REG_UCOEFF1, 0x89);
     write8(SI1145_REG_UCOEFF2, 0x02);
     write8(SI1145_REG_UCOEFF3, 0x00);
 
-    enableProximityLED(1);
-
     // Enable visible light, IR light and UV light channels and set automeasure rate
     writeParam(SI1145_PARAM_CHLIST,
                SI1145_PARAM_CHLIST_ENUV | SI1145_PARAM_CHLIST_ENALSIR | SI1145_PARAM_CHLIST_ENALSVIS);
-    setAutoMeasurementRate(AUTO_20_MS);
 
     // Configure ambient light sensor
     writeParam(SI1145_PARAM_ALSIRADCGAIN, 0);
@@ -111,6 +109,7 @@ boolean Adafruit_SI1145::begin(MEASUREMENT_MODE mode, uint8_t addr, TwoWire *pBu
  */
 void Adafruit_SI1145::enableProximityLED(int led)
 {
+
     if (led == 1)
     {
         ps1LEDEnabled = true;
@@ -127,13 +126,14 @@ void Adafruit_SI1145::enableProximityLED(int led)
     write8(SI1145_REG_PSLED21,
            (ps1LEDEnabled * SI1145_PARAM_PS1_LED_CURRENT) | (ps2LEDEnabled * SI1145_PARAM_PS2_LED_CURRENT));
 
-    writeParam(SI1145_PARAM_PSLED12SEL,
-               (ps1LEDEnabled * SI1145_PARAM_PSLED12SEL_PS1LED1) | (ps2LEDEnabled * SI1145_PARAM_PSLED12SEL_PS2LED2));
-
     writeParam(SI1145_PARAM_PS1ADCMUX, SI1145_PARAM_ADCMUX_LARGEIR);
     writeParam(SI1145_PARAM_PS2ADCMUX, SI1145_PARAM_ADCMUX_LARGEIR);
 
-    writeParam(SI1145_PARAM_PSADCGAIN, SI1145_PARAM_PS_ADC_GAIN);
+    writeParam(SI1145_PARAM_PSLED12SEL,
+               (ps1LEDEnabled * SI1145_PARAM_PSLED12SEL_PS1LED1) | (ps2LEDEnabled * SI1145_PARAM_PSLED12SEL_PS2LED2));
+
+
+    writeParam(SI1145_PARAM_PSADCGAIN, 0);
 
     writeParam(SI1145_PARAM_PSADCOUNTER, SI1145_PARAM_ADCCOUNTER_511CLK);
     writeParam(SI1145_PARAM_PSADCMISC, SI1145_PARAM_PSADCMISC_RANGE | SI1145_PARAM_PSADCMISC_PSMODE);
@@ -310,13 +310,13 @@ void Adafruit_SI1145::setPSMeasurementMode(MEASUREMENT_MODE mode)
 {
     if (mode == MEASUREMENT_MODE_AUTO)
     {
-        write8(SI1145_REG_COMMAND, SI1145_PS_AUTO);
+        write8(SI1145_REG_COMMAND, SI1145_PSALS_AUTO);
     }
 
     else if (mode == MEASUREMENT_MODE_CONVERSION)
     {
         setAutoMeasurementRate(OFF);
-        write8(SI1145_REG_COMMAND, SI1145_PS_PAUSE);
+        write8(SI1145_REG_COMMAND, SI1145_PSALS_PAUSE);
     }
 }
 
@@ -348,8 +348,6 @@ void Adafruit_SI1145::setAutoMeasurementRate(uint16_t rate)
  */
 void Adafruit_SI1145::setAutoMeasurementRate(AUTO_MEAS_RATE rate)
 {
-    return;
-
     switch (rate)
     {
     case OFF:
@@ -421,12 +419,12 @@ void Adafruit_SI1145::clearALSInterrupt()
  */
 void Adafruit_SI1145::enablePSInterrupts()
 {
-    //  write8(SI1145_REG_INTCFG, SI1145_PARAM_ENABLE_INT);
-    //  write8(SI1145_REG_IRQMODE1, SI1145_PARAM_INT_ON_COMPLETE);
+    write8(SI1145_REG_INTCFG, SI1145_PARAM_ENABLE_INT);
+    write8(SI1145_REG_IRQMODE1, SI1145_PARAM_INT_ON_COMPLETE);
 
-    //  uint8_t reg = read8(SI1145_REG_IRQEN);
-    //  write8(SI1145_REG_IRQEN,
-    //         reg | (ps1LEDEnabled * SI1145_PARAM_PS1_ENABLE_INT) | (ps2LEDEnabled * SI1145_PARAM_PS2_ENABLE_INT));
+    uint8_t reg = read8(SI1145_REG_IRQEN);
+    write8(SI1145_REG_IRQEN,
+           reg | (ps1LEDEnabled * SI1145_PARAM_PS1_ENABLE_INT) | (ps2LEDEnabled * SI1145_PARAM_PS2_ENABLE_INT));
 }
 
 /**
@@ -440,8 +438,8 @@ void Adafruit_SI1145::enablePSInterrupts()
  */
 void Adafruit_SI1145::clearPSInterrupts()
 {
-    // uint8_t reg = read8(SI1145_REG_IRQSTAT);
-    // write8(SI1145_REG_IRQSTAT, reg | SI1145_PARAM_PS1_CLEAR_INT | SI1145_PARAM_PS2_CLEAR_INT);
+    uint8_t reg = read8(SI1145_REG_IRQSTAT);
+    write8(SI1145_REG_IRQSTAT, reg | SI1145_PARAM_PS1_CLEAR_INT | SI1145_PARAM_PS2_CLEAR_INT);
 }
 
 /*********************************************************************/

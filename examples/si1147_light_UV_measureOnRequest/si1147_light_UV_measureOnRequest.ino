@@ -3,7 +3,7 @@
  *
  * @file        si1147_light_UV_measureOnRequest.ino
  * @brief       Example for reading light intensity with SI1147 sensor in forced conversion mode.
- *              For more info see solde.red/333074
+ *              For more info see solde.red/333076
  *
  *
  * @authors     Robert Soric @ soldered.com
@@ -35,6 +35,8 @@ void setup()
 
 void loop()
 {
+    // Periodically print sensor readings
+    
     uint16_t visLight;                    // Variable to store visible light intensity
     visLight = lightSensor.readVisible(); // Get visible light intensity in lux
     Serial.print("Light intensity: ");

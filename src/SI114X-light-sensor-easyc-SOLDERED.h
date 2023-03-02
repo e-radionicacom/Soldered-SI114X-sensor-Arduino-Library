@@ -6,7 +6,7 @@
  *
  *
  * @copyright GNU General Public License v3.0
- * @authors     Goran Juric for soldered.com
+ * @authors     Goran Juric & Robert Soric for soldered.com
  ***************************************************/
 
 #ifndef __LIGHT_SENSOR_SI114X_BREAKOUT__
