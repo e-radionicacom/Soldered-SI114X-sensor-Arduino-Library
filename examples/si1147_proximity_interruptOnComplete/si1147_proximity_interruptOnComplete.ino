@@ -23,6 +23,12 @@
 SI1147 lightSensor;              // Create SI1142 sensor object
 volatile bool interrupt = false; // Variable which stores if an interrupt occured
 
+// Interrupt service routine which runs on any interrupt recieved
+void ISR()
+{
+    interrupt = true;
+}
+
 void setup()
 {
     Serial.begin(115200);           // Begin serial communication with PC using 115200 baud rate
@@ -55,12 +61,6 @@ void setup()
     // Enable PS interrupts
     // This will enable interrupts for the previously initialized LED pins
     lightSensor.enablePSInterrupts();
-}
-
-// Interrupt service routine which runs on any interrupt recieved
-void ISR()
-{
-    interrupt = true;
 }
 
 void loop()
