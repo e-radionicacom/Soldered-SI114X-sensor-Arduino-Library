@@ -3,18 +3,37 @@
  *
  * @file        si1142_light_measureOnRequest.ino
  * @brief       Example for reading light intensity with SI1142 sensor in forced conversion mode.
- *              For more info see solde.red/333074
+ *
+ *              To successfully run the sketch:
+ *              -Connect the breakout to your Dasduino board according to the diagram below
+ *              -Open the serial monitor at 115200 baud!
+ *
+ *              SI1142 Digital light & proximity sensor: solde.red/333074
+ *              Dasduino Core: www.solde.red/333037
+ *              Dasduino Connect: www.solde.red/333034
+ *              Dasduino ConnectPlus: www.solde.red/333033
  *
  *
  * @authors     Robert Soric @ soldered.com
  ***************************************************/
 
-// To run this example, connect the SI114X breakout board to your Dasduino board via easyC
-
 // In this example, the device is set into 'Forced Conversion' measurement mode, meaning it will complete a measurement
 // and then go back to standby, useful for saving power
 
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
+
+/**
+ * Connecting diagram:
+ *
+ * SI1142                      Dasduino Core / Connect / ConnectPlus
+ * VCC------------------------->VCC
+ * GND------------------------->GND
+ * SCL------------------------->A5/IO5/IO22
+ * SDA------------------------->A4/IO4/IO21
+ *
+ * Or, simply use an easyC cable!
+ *
+ */
 
 SI1142 lightSensor; // Create SI1142 sensor object
 

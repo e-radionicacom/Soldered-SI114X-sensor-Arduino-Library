@@ -2,25 +2,50 @@
  **************************************************
  *
  * @file        si1147_proximity_interruptOnComplete.ino
- * @brief       Example for sending an interrupt when a measurement cycle is complete with the SI1142 sensor.
- *              For more info see solde.red/333076
+ * @brief       Example for reading proximity on SI1147 sensor and sending an interrupt on measurement completion.
+ *
+ *              To successfully run the sketch:
+ *              -Connect the breakout to your Dasduino board according to the diagram below
+ *              -Also connect the IR LED and interrupt pin!
+ *              -Open the serial monitor at 115200 baud!
+ * 
+ *              IMPORTANT: For this example to work, you must remove the short on JP5/JP6 on your SI114X breakout board
+ *
+ *              SI1147 Digital light & proximity sensor: solde.red/333076
+ *              IR LED: IR www.solde.red/101922
+ *              Dasduino Core: www.solde.red/333037
+ *              Dasduino Connect: www.solde.red/333034
+ *              Dasduino ConnectPlus: www.solde.red/333033
  *
  *
  * @authors     Robert Soric @ soldered.com
  ***************************************************/
 
-// To run this example, connect the SI114X breakout board to your Dasduino board via easyC
-// Also connect an IR LED (anode to 3V3, cathode to LED1 pin)
-// IR LED and the breakout board need to be placed close to each other so the sensor can detect IR light reflection
-// which indicates proximity
-
-// NOTE: For this example to work, you must remove the short on JP5/JP6 on your SI114X breakout board
-
-#define INT_PIN 32 // Change interrupt pin here
-
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
 
+/**
+ * Connecting diagram:
+ *
+ * SI1147                       Dasduino Core / Connect / ConnectPlus
+ * VCC------------------------->VCC
+ * GND------------------------->GND
+ * SCL------------------------->A5/IO5/IO22
+ * SDA------------------------->A4/IO4/IO21
+ * 
+ * Or, simply use an easyC cable!
+ * 
+ * IMPORTANT: an IR LED must be connected!
+ * SI1147                       IR LED
+ * VLED------------------------>CATHODE (-)
+ * VCC------------------------->ANODE (+)
+ * INT------------------------->INT_PIN (set by user)
+ * 
+ */
+
+#define INT_PIN 3 // Change interrupt pin here, it has to be a pin which supports interrupts
+
 SI1147 lightSensor;              // Create SI1142 sensor object
+
 volatile bool interrupt = false; // Variable which stores if an interrupt occured
 
 // Interrupt service routine which runs on any interrupt recieved
