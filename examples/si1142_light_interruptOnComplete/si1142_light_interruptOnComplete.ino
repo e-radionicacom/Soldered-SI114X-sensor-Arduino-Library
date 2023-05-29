@@ -3,21 +3,43 @@
  *
  * @file        si1142_light_interruptOnComplete.ino
  * @brief       Example for sending an interrupt when a measurement cycle is complete with the SI1142 sensor.
- *              For more info see solde.red/333074
+ *
+ *              To successfully run the sketch:
+ *              -Connect the breakout to your Dasduino board according to the diagram below
+ *              -Also connect the interrupt pin
+ *              -Open the serial monitor at 115200 baud!
+ *
+ *              SI1142 Digital light & proximity sensor: solde.red/333074
+ *              Dasduino Core: www.solde.red/333037
+ *              Dasduino Connect: www.solde.red/333034
+ *              Dasduino ConnectPlus: www.solde.red/333033
  *
  *
  * @authors     Robert Soric @ soldered.com
  ***************************************************/
 
-// To run this example, connect the SI114X breakout board to your Dasduino board via easyC
-// Also connect the INT pin to a digital input which supports interrupts
-
-// In this example, the sensor will send an interrupt via the INT pin periodically when the internal measurement process
-// is complete and a new value is ready to be read
-
-#define INT_PIN 32 // Change interrupt pin here
+// In this example the sensor is periodically measuring values (auto mode) and storing the measurements
+// We are reading the measurements in the main loop
 
 #include "SI114X-light-sensor-easyc-SOLDERED.h"
+
+/**
+ * Connecting diagram:
+ *
+ * SI1142                      Dasduino Core / Connect / ConnectPlus
+ * VCC------------------------->VCC
+ * GND------------------------->GND
+ * SCL------------------------->A5/IO5/IO22
+ * SDA------------------------->A4/IO4/IO21
+ *
+ * Or, simply use an easyC cable!
+ * 
+ * SI1142                       Dasduino
+ * INT------------------------->INT_PIN (set by user)
+ *
+ */
+
+#define INT_PIN 3 // Change interrupt pin here, it has to be a pin which supports interrupts
 
 SI1142 lightSensor;              // Create SI1142 sensor object
 volatile bool interrupt = false; // Variable which stores if an interrupt occured

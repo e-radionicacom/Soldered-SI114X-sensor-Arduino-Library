@@ -2,21 +2,40 @@
  **************************************************
  *
  * @file        si1147_light_UV_measureOnRequest.ino
- * @brief       Example for reading light intensity with SI1147 sensor in forced conversion mode.
- *              For more info see solde.red/333076
+ * @brief       Example for making measurements on SI1147 in forced request mode.
+ *
+ *              To successfully run the sketch:
+ *              -Connect the breakout to your Dasduino board according to the diagram below
+ *              -Open the serial monitor at 115200 baud!
+ *
+ *              SI1147 Digital light & proximity sensor: solde.red/333076
+ *              Dasduino Core: www.solde.red/333037
+ *              Dasduino Connect: www.solde.red/333034
+ *              Dasduino ConnectPlus: www.solde.red/333033
  *
  *
  * @authors     Robert Soric @ soldered.com
  ***************************************************/
 
-// To run this example, connect the SI114X breakout board to your Dasduino board via easyC
+#include "SI114X-light-sensor-easyc-SOLDERED.h"
+
+/**
+ * Connecting diagram:
+ *
+ * SI1147                      Dasduino Core / Connect / ConnectPlus
+ * VCC------------------------->VCC
+ * GND------------------------->GND
+ * SCL------------------------->A5/IO5/IO22
+ * SDA------------------------->A4/IO4/IO21
+ *
+ * Or, simply use an easyC cable!
+ *
+ */
 
 // In this example, the device is set into 'Forced Conversion' measurement mode, meaning it will complete a measurement
 // and then go back to standby, useful for saving power
 
-#include "SI114X-light-sensor-easyc-SOLDERED.h"
-
-SI1147 lightSensor; // Create SI1142 sensor object
+SI1147 lightSensor; // Create SI1147 sensor object
 
 void setup()
 {
@@ -36,7 +55,7 @@ void setup()
 void loop()
 {
     // Periodically print sensor readings
-    
+
     uint16_t visLight;                    // Variable to store visible light intensity
     visLight = lightSensor.readVisible(); // Get visible light intensity in lux
     Serial.print("Light intensity: ");
@@ -49,7 +68,7 @@ void loop()
     Serial.print(IRLight); // Print lIR ight intensity
     Serial.println(" lux.");
 
-    float UVindex;               // Variable to store UV (ultraviolet) index
+    float UVindex;                  // Variable to store UV (ultraviolet) index
     UVindex = lightSensor.readUV(); // Get UV light intensity in lux
     Serial.print("UV light index: ");
     Serial.println(UVindex); // Print UV ight intensity
