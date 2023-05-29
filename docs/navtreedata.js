@@ -26,13 +26,13 @@ var NAVTREE =
 [
   [ "SI114X sensor Arduino library", "index.html", [
     [ "SI114x sensor breakout Arduino library", "index.html", "index" ],
-    [ "Adafruit Community Code of Conduct", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html", [
-      [ "Our Pledge", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md10", null ],
-      [ "Our Standards", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md11", null ],
-      [ "Our Responsibilities", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md12", null ],
-      [ "Moderation", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md13", null ],
-      [ "Scope", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md14", null ],
-      [ "Attribution", "md_src_libs__adafruit__s_i1145__library__bus_i_o_code_of_conduct.html#autotoc_md15", null ]
+    [ "Adafruit Community Code of Conduct", "md_src_2libs_2_adafruit___s_i1145___library___bus_i_o_2code-of-conduct.html", [
+      [ "Our Pledge", "md_src_2libs_2_adafruit___s_i1145___library___bus_i_o_2code-of-conduct.html#autotoc_md10", null ],
+      [ "Our Standards", "md_src_2libs_2_adafruit___s_i1145___library___bus_i_o_2code-of-conduct.html#autotoc_md11", null ],
+      [ "Our Responsibilities", "md_src_2libs_2_adafruit___s_i1145___library___bus_i_o_2code-of-conduct.html#autotoc_md12", null ],
+      [ "Moderation", "md_src_2libs_2_adafruit___s_i1145___library___bus_i_o_2code-of-conduct.html#autotoc_md13", null ],
+      [ "Scope", "md_src_2libs_2_adafruit___s_i1145___library___bus_i_o_2code-of-conduct.html#autotoc_md14", null ],
+      [ "Attribution", "md_src_2libs_2_adafruit___s_i1145___library___bus_i_o_2code-of-conduct.html#autotoc_md15", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

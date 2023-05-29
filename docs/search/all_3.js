@@ -7,5 +7,5 @@ var searchData=
   ['code_2dof_2dconduct_2emd_4',['code-of-conduct.md',['../code-of-conduct_8md.html',1,'']]],
   ['cspinmask_5',['csPinMask',['../class_adafruit___s_p_i_device.html#ae9c516595b3a522a934c213a50cd7810',1,'Adafruit_SPIDevice']]],
   ['csport_6',['csPort',['../class_adafruit___s_p_i_device.html#a9ebb419c101d8c19f2406462c21cf899',1,'Adafruit_SPIDevice']]],
-  ['currentmeasurementmode_7',['currentMeasurementMode',['../class_adafruit___s_i1145.html#a3f36da39a9a6f2c61f5e4bc42ae4a484',1,'Adafruit_SI1145::currentMeasurementMode()'],['../class_soldered___s_i1142.html#a905f7c1cca7bd584f880cf23212c2ea4',1,'Soldered_SI1142::currentMeasurementMode()']]]
+  ['currentmeasurementmode_7',['currentMeasurementMode',['../class_adafruit___s_i1145.html#a3f36da39a9a6f2c61f5e4bc42ae4a484',1,'Adafruit_SI1145::currentMeasurementMode'],['../class_soldered___s_i1142.html#a905f7c1cca7bd584f880cf23212c2ea4',1,'Soldered_SI1142::currentMeasurementMode']]]
 ];
