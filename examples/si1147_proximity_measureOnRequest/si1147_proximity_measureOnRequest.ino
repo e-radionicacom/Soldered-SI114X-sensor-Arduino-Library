@@ -1,7 +1,7 @@
 /**
  **************************************************
  *
- * @file        si1147_proximity_autoMeasure.ino
+ * @file        si1147_proximity_measureOnRequest.ino
  * @brief       Example for reading proximity on SI1147 sensor in auto mode using an external IR LED.
  *
  *              To successfully run the sketch:

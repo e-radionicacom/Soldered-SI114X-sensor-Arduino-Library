@@ -96,7 +96,7 @@ void loop()
         Serial.println("Interrupt received!");
 
         uint16_t prox;                  // Variable to store IR light intensity
-        prox = lightSensor.readProx(2); // Get IR light intensity in lux from LED1
+        prox = lightSensor.readProx(1); // Get IR light intensity in lux from LED1
         Serial.print("Proximity: ");
         Serial.println(prox); // Print light intensity in lux units
         Serial.println("");   // Newline
