@@ -375,6 +375,9 @@ void Adafruit_SI1145::setAutoMeasurementRate(AUTO_MEAS_RATE rate)
         write8(SI1145_REG_MEASRATE1, 0xFA);
         break;
     }
+
+    // Set the measurement mode to Auto - has to be done after setting the speed
+    setALSMeasurementMode(MEASUREMENT_MODE_AUTO);
 }
 
 /**
