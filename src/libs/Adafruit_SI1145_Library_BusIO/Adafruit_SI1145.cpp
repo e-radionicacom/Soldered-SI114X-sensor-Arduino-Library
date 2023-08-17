@@ -74,9 +74,10 @@ boolean Adafruit_SI1145::begin(MEASUREMENT_MODE mode, uint8_t addr, TwoWire *pBu
     reset();
 
     // Set UVindex measurement coefficients
-    write8(SI1145_REG_UCOEFF0, 0x29);
-    write8(SI1145_REG_UCOEFF1, 0x89);
-    write8(SI1145_REG_UCOEFF2, 0x02);
+    // Modified for SI1147
+    write8(SI1145_REG_UCOEFF0, 0x7B);
+    write8(SI1145_REG_UCOEFF1, 0x6B);
+    write8(SI1145_REG_UCOEFF2, 0x01);
     write8(SI1145_REG_UCOEFF3, 0x00);
 
     // Enable visible light, IR light and UV light channels and set automeasure rate
