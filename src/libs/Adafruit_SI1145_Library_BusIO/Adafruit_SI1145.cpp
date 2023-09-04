@@ -75,8 +75,8 @@ boolean Adafruit_SI1145::begin(MEASUREMENT_MODE mode, uint8_t addr, TwoWire *pBu
 
     // Set UVindex measurement coefficients
     // Modified for SI1147
-    write8(SI1145_REG_UCOEFF0, 0x7B);
-    write8(SI1145_REG_UCOEFF1, 0x6B);
+    write8(SI1145_REG_UCOEFF0, 0xDB);
+    write8(SI1145_REG_UCOEFF1, 0x8F);
     write8(SI1145_REG_UCOEFF2, 0x01);
     write8(SI1145_REG_UCOEFF3, 0x00);
 
@@ -84,15 +84,16 @@ boolean Adafruit_SI1145::begin(MEASUREMENT_MODE mode, uint8_t addr, TwoWire *pBu
     writeParam(SI1145_PARAM_CHLIST,
                SI1145_PARAM_CHLIST_ENUV | SI1145_PARAM_CHLIST_ENALSIR | SI1145_PARAM_CHLIST_ENALSVIS);
 
-    // Configure ambient light sensor
+    // Configure    ambient light sensor
     writeParam(SI1145_PARAM_ALSIRADCGAIN, 0);
     writeParam(SI1145_PARAM_ALSVISADCOUNTER, SI1145_PARAM_ADCCOUNTER_511CLK);
 
     // Configure IR sensor
+    writeParam(SI1145_PARAM_ALSIRADCMUX, SI1145_PARAM_ADCMUX_SMALLIR);
     writeParam(SI1145_PARAM_ALSIRADCMISC, SI1145_PARAM_ALSIRADCMISC_RANGE);
+    writeParam(SI1145_PARAM_ALSVISADCMISC, SI1145_PARAM_ALSVISADCMISC_VISRANGE);
     writeParam(SI1145_PARAM_ALSIRADCGAIN, 0);
     writeParam(SI1145_PARAM_ALSIRADCOUNTER, SI1145_PARAM_ADCCOUNTER_511CLK);
-    writeParam(SI1145_PARAM_ALSIRADCMUX, SI1145_PARAM_ADCMUX_SMALLIR);
 
     setALSMeasurementMode(mode);
     currentMeasurementMode = mode;
@@ -176,7 +177,7 @@ float Adafruit_SI1145::readUV(void)
         delay(2);
     }
 
-    return read16(0x2C) / 100.0;
+    return (read16(0x2C) / 100.0) * 0.70;
 }
 
 /**
