@@ -63,10 +63,10 @@ void loop()
     Serial.println(" lux.");
 
     uint16_t IRLight;               // Variable to store IR (infrared) light intensity
-    IRLight = lightSensor.readIR(); // Get IR light intensity in lux
+    IRLight = lightSensor.readIR(); // Get IR light intensity in ADC counts * m^2/W.
     Serial.print("IR light intensity: ");
-    Serial.print(IRLight); // Print lIR ight intensity
-    Serial.println(" lux.");
+    Serial.print(IRLight); // Print IR ight intensity
+    Serial.println(" ADC counts * m^2/W.");
 
     delay(2500); // wait a bit so the output isn't too fast
 }
