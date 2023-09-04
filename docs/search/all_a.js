@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['read_0',['read',['../class_adafruit___bus_i_o___register.html#a2b48e23dacbb7cffc0eb07dcebcfba6f',1,'Adafruit_BusIO_Register::read(uint8_t *buffer, uint8_t len)'],['../class_adafruit___bus_i_o___register.html#adca04654563a7c68a580533197366f61',1,'Adafruit_BusIO_Register::read(uint8_t *value)'],['../class_adafruit___bus_i_o___register.html#a5c49c498815a5414d6fb5915760bbeba',1,'Adafruit_BusIO_Register::read(uint16_t *value)'],['../class_adafruit___bus_i_o___register.html#a699434b2567ae8fce541b8048d891252',1,'Adafruit_BusIO_Register::read(void)'],['../class_adafruit___bus_i_o___register_bits.html#a868614bb793ae3c4c00b7954896213d0',1,'Adafruit_BusIO_RegisterBits::read()'],['../class_adafruit___i2_c_device.html#afeeccb3147b2f0340c65d2c0c1ce3ea6',1,'Adafruit_I2CDevice::read()'],['../class_adafruit___s_p_i_device.html#a5c4fce15c92a0210c0872a827f239ab1',1,'Adafruit_SPIDevice::read()']]],
-  ['read16_1',['read16',['../class_adafruit___s_i1145.html#a021989c1f46249bb64ae12863d80bf23',1,'Adafruit_SI1145::read16()'],['../class_soldered___s_i1142.html#a8a505a9e306f69e70129211dba41ce27',1,'Soldered_SI1142::read16()']]],
-  ['read8_2',['read8',['../class_adafruit___s_i1145.html#af36fbd1a7ec186e847ed2edba00d057a',1,'Adafruit_SI1145::read8()'],['../class_soldered___s_i1142.html#a784aecbc9ae0d56c5b5da9659dc484c6',1,'Soldered_SI1142::read8()']]],
-  ['readcached_3',['readCached',['../class_adafruit___bus_i_o___register.html#a9738fbb8c088d5cf6d381f87dc9288bb',1,'Adafruit_BusIO_Register']]],
-  ['readir_4',['readIR',['../class_adafruit___s_i1145.html#a7295e72f69a558cd6b3ac382ac791688',1,'Adafruit_SI1145::readIR()'],['../class_soldered___s_i1142.html#a83ac8034ec4cefae63ec606a3d76b581',1,'Soldered_SI1142::readIR()']]],
-  ['readme_2emd_5',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['readparam_6',['readParam',['../class_adafruit___s_i1145.html#a89da21e0788a2aab7511489bb39eda88',1,'Adafruit_SI1145::readParam()'],['../class_soldered___s_i1142.html#a2c824ee1a096e7c0f9800449954b5fa5',1,'Soldered_SI1142::readParam()']]],
-  ['readprox_7',['readProx',['../class_adafruit___s_i1145.html#a8efe7824c073373767f4fabdcc36108e',1,'Adafruit_SI1145::readProx()'],['../class_soldered___s_i1142.html#a5be31789e1f639ad595d5f096b429872',1,'Soldered_SI1142::readProx()']]],
-  ['readuv_8',['readUV',['../class_adafruit___s_i1145.html#a279fe4b95e903b4e59b47e6dec99ba5b',1,'Adafruit_SI1145']]],
-  ['readvisible_9',['readVisible',['../class_adafruit___s_i1145.html#a25bf65464093ec0ba5f9fdd884606a21',1,'Adafruit_SI1145::readVisible()'],['../class_soldered___s_i1142.html#a318c588225b1ba66f8760f2454da939b',1,'Soldered_SI1142::readVisible()']]],
-  ['reset_10',['reset',['../class_adafruit___s_i1145.html#ab7a22b92c14315e36b84a42498e970ea',1,'Adafruit_SI1145::reset()'],['../class_soldered___s_i1142.html#add76a63374d6991736b50f5bc22504eb',1,'Soldered_SI1142::reset()']]]
+  ['maxbuffersize_0',['maxBufferSize',['../class_adafruit___i2_c_device.html#a20c6ac28cbaa9e5f63ef6d4687fd4e60',1,'Adafruit_I2CDevice']]],
+  ['measurement_5fmode_1',['MEASUREMENT_MODE',['../defines_8h.html#a591c22c3d5b2f177e599c7d72d824895',1,'defines.h']]],
+  ['measurement_5fmode_5fauto_2',['MEASUREMENT_MODE_AUTO',['../defines_8h.html#a591c22c3d5b2f177e599c7d72d824895a5b443ff8e71e033a95ac116cbe4e018c',1,'defines.h']]],
+  ['measurement_5fmode_5fconversion_3',['MEASUREMENT_MODE_CONVERSION',['../defines_8h.html#a591c22c3d5b2f177e599c7d72d824895a6a7f89af04dfa3e35bf94e8a9ebc185b',1,'defines.h']]],
+  ['misopinmask_4',['misoPinMask',['../class_adafruit___s_p_i_device.html#a52686e958a67d1fa6f32dcbe97ac8e40',1,'Adafruit_SPIDevice']]],
+  ['misoport_5',['misoPort',['../class_adafruit___s_p_i_device.html#a7e2721cd991b997b07810c22862ba8a5',1,'Adafruit_SPIDevice']]],
+  ['moderation_6',['Moderation',['../md_src_2libs_2_adafruit___s_i1145___library___bus_i_o_2code-of-conduct.html#autotoc_md13',1,'']]],
+  ['mosipinmask_7',['mosiPinMask',['../class_adafruit___s_p_i_device.html#a0f680ec4e8db38d226e4c7c80bd5c929',1,'Adafruit_SPIDevice']]],
+  ['mosiport_8',['mosiPort',['../class_adafruit___s_p_i_device.html#a7fc089e2c00d81e5adb68c1b3dfd5ef0',1,'Adafruit_SPIDevice']]]
 ];

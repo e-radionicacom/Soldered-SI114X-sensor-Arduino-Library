@@ -4,10 +4,10 @@ var searchData=
   ['read16_1',['read16',['../class_adafruit___s_i1145.html#a021989c1f46249bb64ae12863d80bf23',1,'Adafruit_SI1145::read16()'],['../class_soldered___s_i1142.html#a8a505a9e306f69e70129211dba41ce27',1,'Soldered_SI1142::read16()']]],
   ['read8_2',['read8',['../class_adafruit___s_i1145.html#af36fbd1a7ec186e847ed2edba00d057a',1,'Adafruit_SI1145::read8()'],['../class_soldered___s_i1142.html#a784aecbc9ae0d56c5b5da9659dc484c6',1,'Soldered_SI1142::read8()']]],
   ['readcached_3',['readCached',['../class_adafruit___bus_i_o___register.html#a9738fbb8c088d5cf6d381f87dc9288bb',1,'Adafruit_BusIO_Register']]],
-  ['readir_4',['readIR',['../class_adafruit___s_i1145.html#a7295e72f69a558cd6b3ac382ac791688',1,'Adafruit_SI1145::readIR()'],['../class_soldered___s_i1142.html#a83ac8034ec4cefae63ec606a3d76b581',1,'Soldered_SI1142::readIR()']]],
-  ['readparam_5',['readParam',['../class_adafruit___s_i1145.html#a89da21e0788a2aab7511489bb39eda88',1,'Adafruit_SI1145::readParam()'],['../class_soldered___s_i1142.html#a2c824ee1a096e7c0f9800449954b5fa5',1,'Soldered_SI1142::readParam()']]],
-  ['readprox_6',['readProx',['../class_adafruit___s_i1145.html#a8efe7824c073373767f4fabdcc36108e',1,'Adafruit_SI1145::readProx()'],['../class_soldered___s_i1142.html#a5be31789e1f639ad595d5f096b429872',1,'Soldered_SI1142::readProx()']]],
+  ['readir_4',['readir',['../class_adafruit___s_i1145.html#a7295e72f69a558cd6b3ac382ac791688',1,'Adafruit_SI1145::readIR()'],['../class_soldered___s_i1142.html#a83ac8034ec4cefae63ec606a3d76b581',1,'Soldered_SI1142::readIR()']]],
+  ['readparam_5',['readparam',['../class_adafruit___s_i1145.html#a89da21e0788a2aab7511489bb39eda88',1,'Adafruit_SI1145::readParam()'],['../class_soldered___s_i1142.html#a2c824ee1a096e7c0f9800449954b5fa5',1,'Soldered_SI1142::readParam()']]],
+  ['readprox_6',['readprox',['../class_adafruit___s_i1145.html#a8efe7824c073373767f4fabdcc36108e',1,'Adafruit_SI1145::readProx()'],['../class_soldered___s_i1142.html#a5be31789e1f639ad595d5f096b429872',1,'Soldered_SI1142::readProx()']]],
   ['readuv_7',['readUV',['../class_adafruit___s_i1145.html#a279fe4b95e903b4e59b47e6dec99ba5b',1,'Adafruit_SI1145']]],
-  ['readvisible_8',['readVisible',['../class_adafruit___s_i1145.html#a25bf65464093ec0ba5f9fdd884606a21',1,'Adafruit_SI1145::readVisible()'],['../class_soldered___s_i1142.html#a318c588225b1ba66f8760f2454da939b',1,'Soldered_SI1142::readVisible()']]],
+  ['readvisible_8',['readvisible',['../class_adafruit___s_i1145.html#a25bf65464093ec0ba5f9fdd884606a21',1,'Adafruit_SI1145::readVisible()'],['../class_soldered___s_i1142.html#a318c588225b1ba66f8760f2454da939b',1,'Soldered_SI1142::readVisible()']]],
   ['reset_9',['reset',['../class_adafruit___s_i1145.html#ab7a22b92c14315e36b84a42498e970ea',1,'Adafruit_SI1145::reset()'],['../class_soldered___s_i1142.html#add76a63374d6991736b50f5bc22504eb',1,'Soldered_SI1142::reset()']]]
 ];

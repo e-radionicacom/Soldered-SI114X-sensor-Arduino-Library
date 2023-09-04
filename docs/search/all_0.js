@@ -5,7 +5,7 @@ var searchData=
   ['_5faddress_2',['_address',['../class_adafruit___bus_i_o___register.html#aed490186cd08587f0c510ed3b7619613',1,'Adafruit_BusIO_Register']]],
   ['_5faddrwidth_3',['_addrwidth',['../class_adafruit___bus_i_o___register.html#af21a42805c7da8b32d3850d58fa547e5',1,'Adafruit_BusIO_Register']]],
   ['_5fbegun_4',['_begun',['../class_adafruit___i2_c_device.html#a895a7279d25777c740a32646315d0128',1,'Adafruit_I2CDevice::_begun'],['../class_adafruit___s_p_i_device.html#a4d4f9c41a1c90bb2752405dfbf3ec709',1,'Adafruit_SPIDevice::_begun']]],
-  ['_5fbitorder_5',['_BitOrder',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5',1,'_BitOrder:&#160;Adafruit_SPIDevice.h'],['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5',1,'_BitOrder:&#160;Adafruit_SPIDevice.h']]],
+  ['_5fbitorder_5',['_bitorder',['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5',1,'_BitOrder:&#160;Adafruit_SPIDevice.h'],['../_adafruit___s_p_i_device_8h.html#a7bc3597abe6f7bd321be6c1dda888db5',1,'_BitOrder:&#160;Adafruit_SPIDevice.h']]],
   ['_5fbits_6',['_bits',['../class_adafruit___bus_i_o___register_bits.html#af3578a239cc59f6617e01261a12d59af',1,'Adafruit_BusIO_RegisterBits']]],
   ['_5fbuffer_7',['_buffer',['../class_adafruit___bus_i_o___register.html#aa55269d290d3cfade0077b80aa1bffd2',1,'Adafruit_BusIO_Register']]],
   ['_5fbyteorder_8',['_byteorder',['../class_adafruit___bus_i_o___register.html#a28ff498f47331d9150aa12320682b568',1,'Adafruit_BusIO_Register']]],
