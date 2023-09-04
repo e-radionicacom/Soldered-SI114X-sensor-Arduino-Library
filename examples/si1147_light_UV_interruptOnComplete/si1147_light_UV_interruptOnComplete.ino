@@ -89,10 +89,10 @@ void loop()
         Serial.println(" lux.");
 
         uint16_t IRLight;               // Variable to store IR (infrared) light intensity
-        IRLight = lightSensor.readIR(); // Get IR light intensity in lux
+        IRLight = lightSensor.readIR(); // Get IR light intensity in ADC counts * m^2/W.
         Serial.print("IR light intensity: ");
-        Serial.print(IRLight); // Print lIR ight intensity
-        Serial.println(" lux.");
+        Serial.print(IRLight); // Print IR ight intensity
+        Serial.println(" ADC counts * m^2/W.");
 
         float UVindex;                  // Variable to store UV (ultraviolet) index
         UVindex = lightSensor.readUV(); // Get UV light intensity in lux
