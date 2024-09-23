@@ -6,13 +6,13 @@
 
 | ![Digital light & proximity sensor SI1142 breakout](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :------------------------------------------------------------------------------------------------------------------------: |
-| [Digital light & proximity sensor SI1142 breakout](https://www.solde.red/333074)
+| [Digital light & proximity sensor SI1142 breakout](https://solde.red/333074)
 
 | ![UV sensor SI1147 breakout](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :-------------------------------------------------------------------------------------------------: |
-|                      [UV sensor SI1147 breakout](https://www.solde.red/333076)                      |
+|                      [UV sensor SI1147 breakout](https://solde.red/333076)                      |
 
-SI114x sensor compliant to [easyC ecosystem](https://www.soldered.com/en/easyC).
+SI114x sensor compliant to [easyC ecosystem](https://www.soldered.com/easyC).
 
 ### Repository Contents
 
