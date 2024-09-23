@@ -5,5 +5,5 @@ var searchData=
   ['write8_2',['write8',['../class_adafruit___s_i1145.html#af4646fb64d134f452d91aba415dd6b46',1,'Adafruit_SI1145::write8()'],['../class_soldered___s_i1142.html#a02bccaaab85670b5abfa08c5f687bddf',1,'Soldered_SI1142::write8()']]],
   ['write_5fand_5fread_3',['write_and_read',['../class_adafruit___s_p_i_device.html#a808c81bc4b9e42d064b9f590a1f6b1bd',1,'Adafruit_SPIDevice']]],
   ['write_5fthen_5fread_4',['write_then_read',['../class_adafruit___i2_c_device.html#af04af7e2918c873215ce949ce05ebe33',1,'Adafruit_I2CDevice::write_then_read()'],['../class_adafruit___s_p_i_device.html#a8128f7d67b3e0e56717279deb64227e7',1,'Adafruit_SPIDevice::write_then_read()']]],
-  ['writeparam_5',['writeparam',['../class_adafruit___s_i1145.html#a9ebc22c8989babd8f17636a69e77e952',1,'Adafruit_SI1145::writeParam()'],['../class_soldered___s_i1142.html#a2d28ed00243b9294f2616450bf225d78',1,'Soldered_SI1142::writeParam()']]]
+  ['writeparam_5',['writeParam',['../class_adafruit___s_i1145.html#a9ebc22c8989babd8f17636a69e77e952',1,'Adafruit_SI1145::writeParam()'],['../class_soldered___s_i1142.html#a2d28ed00243b9294f2616450bf225d78',1,'Soldered_SI1142::writeParam()']]]
 ];
